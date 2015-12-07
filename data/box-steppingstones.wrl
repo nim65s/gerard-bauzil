@@ -1,0 +1,629 @@
+#VRML V2.0 utf8
+
+PROTO Joint [
+  exposedField     SFVec3f      center              0 0 0
+  exposedField     MFNode       children            []
+  exposedField     MFFloat      llimit              []
+  exposedField     MFFloat      lvlimit             []
+  exposedField     SFRotation   limitOrientation    0 0 1 0
+  exposedField     SFString     name                ""
+  exposedField     SFRotation   rotation            0 0 1 0
+  exposedField     SFVec3f      scale               1 1 1
+  exposedField     SFRotation   scaleOrientation    0 0 1 0
+  exposedField     MFFloat      stiffness           [ 0 0 0 ]
+  exposedField     SFVec3f      translation         0 0 0
+  exposedField     MFFloat      ulimit              []
+  exposedField     MFFloat      uvlimit             []
+  exposedField     SFString     jointType           ""
+  exposedField     SFInt32      jointId             -1
+  exposedField     SFVec3f      jointAxis           0 0 1
+
+  exposedField     SFFloat      gearRatio           1
+  exposedField     SFFloat      rotorInertia        0
+  exposedField     SFFloat      rotorResistor       0
+  exposedField     SFFloat      torqueConst         1
+  exposedField     SFFloat      encoderPulse        1
+]
+{
+  Transform {
+    center           IS center
+    children         IS children
+    rotation         IS rotation
+    scale            IS scale
+    scaleOrientation IS scaleOrientation
+    translation      IS translation
+  }
+}
+
+PROTO Segment [
+  field           SFVec3f     bboxCenter        0 0 0
+  field           SFVec3f     bboxSize          -1 -1 -1
+  exposedField    SFVec3f     centerOfMass      0 0 0
+  exposedField    MFNode      children          [ ]
+  exposedField    SFNode      coord             NULL
+  exposedField    MFNode      displacers        [ ]
+  exposedField    SFFloat     mass              0 
+  exposedField    MFFloat     momentsOfInertia  [ 0 0 0 0 0 0 0 0 0 ]
+  exposedField    SFString    name              ""
+  eventIn         MFNode      addChildren
+  eventIn         MFNode      removeChildren
+]
+{
+  Group {
+    addChildren    IS addChildren
+    bboxCenter     IS bboxCenter
+    bboxSize       IS bboxSize
+    children       IS children
+    removeChildren IS removeChildren
+  }
+}
+
+PROTO Humanoid [
+  field           SFVec3f    bboxCenter            0 0 0
+  field           SFVec3f    bboxSize              -1 -1 -1
+  exposedField    SFVec3f    center                0 0 0
+  exposedField    MFNode     humanoidBody          [ ]
+  exposedField    MFString   info                  [ ]
+  exposedField    MFNode     joints                [ ]
+  exposedField    SFString   name                  ""
+  exposedField    SFRotation rotation              0 0 1 0
+  exposedField    SFVec3f    scale                 1 1 1
+  exposedField    SFRotation scaleOrientation      0 0 1 0
+  exposedField    MFNode     segments              [ ]
+  exposedField    MFNode     sites                 [ ]
+  exposedField    SFVec3f    translation           0 0 0
+  exposedField    SFString   version               "1.1"
+  exposedField    MFNode     viewpoints            [ ]
+]
+{
+  Transform {
+    bboxCenter       IS bboxCenter
+    bboxSize         IS bboxSize
+    center           IS center
+    rotation         IS rotation
+    scale            IS scale
+    scaleOrientation IS scaleOrientation
+    translation      IS translation
+    children [
+      Group {
+        children IS viewpoints
+      }
+      Group {
+        children IS humanoidBody 
+      }
+    ]
+  }
+}
+
+PROTO VisionSensor [
+  exposedField SFVec3f    translation       0 0 0
+  exposedField SFRotation rotation          0 0 1 0
+  exposedField MFNode     children          [ ]
+  exposedField SFFloat    fieldOfView       0.785398
+  exposedField SFString   name              ""
+  exposedField SFFloat    frontClipDistance 0.01
+  exposedField SFFloat    backClipDistance  10.0
+  exposedField SFString   type              "NONE"
+  exposedField SFInt32    sensorId          -1
+  exposedField SFInt32    width             320
+  exposedField SFInt32    height            240
+]
+{
+  Transform {
+    rotation         IS rotation
+    translation      IS translation
+    children         IS children
+  }
+}
+
+
+PROTO ForceSensor [  
+  exposedField SFVec3f    maxForce    -1 -1 -1
+  exposedField SFVec3f    maxTorque   -1 -1 -1
+  exposedField SFVec3f    translation 0 0 0
+  exposedField SFRotation rotation    0 0 1 0
+  exposedField SFInt32    sensorId    -1
+]
+{
+  Transform {
+    translation IS translation
+    rotation    IS rotation
+  }
+}
+
+PROTO Gyro [
+  exposedField SFVec3f    maxAngularVelocity -1 -1 -1
+  exposedField SFVec3f    translation        0 0 0
+  exposedField SFRotation rotation           0 0 1 0
+  exposedField SFInt32    sensorId           -1
+]
+{
+  Transform {
+    translation IS translation
+    rotation    IS rotation
+  }
+}
+
+PROTO AccelerationSensor [
+  exposedField SFVec3f    maxAcceleration -1 -1 -1
+  exposedField SFVec3f    translation     0 0 0
+  exposedField SFRotation rotation        0 0 1 0
+  exposedField SFInt32    sensorId        -1
+]
+{
+  Transform {
+    translation IS translation
+    rotation    IS rotation
+  }
+}
+
+PROTO PressureSensor [
+  exposedField SFFloat    maxPressure -1
+  exposedField SFVec3f    translation 0 0 0
+  exposedField SFRotation rotation    0 0 1 0
+  exposedField SFInt32    sensorId    -1
+]
+{
+  Transform {
+    translation IS translation
+    rotation    IS rotation
+  }
+}
+
+PROTO PhotoInterrupter [
+  exposedField SFVec3f transmitter 0 0 0
+  exposedField SFVec3f receiver    0 0 0
+  exposedField SFInt32 sensorId    -1
+]
+{
+  Transform{
+    children [
+      Transform{
+        translation IS transmitter
+      }
+      Transform{
+        translation IS receiver
+      }
+    ]
+  }
+}
+
+PROTO CylinderSensorZ [
+    exposedField    SFFloat    maxAngle       -1
+    exposedField    SFFloat    minAngle        0
+    exposedField    MFNode     children        [ ]
+]
+{
+  Transform{
+    rotation 1 0 0 1.5708
+    children [
+      DEF SensorY CylinderSensor{
+        maxAngle IS maxAngle
+        minAngle IS minAngle
+      }
+      DEF AxisY Transform{
+        children [
+          Transform{
+            rotation 1 0 0 -1.5708
+            children IS children
+          }
+        ]
+      }
+    ]
+  }
+  ROUTE SensorY.rotation_changed TO AxisY.set_rotation
+}
+
+PROTO CylinderSensorY [
+    exposedField    SFFloat    maxAngle       -1
+    exposedField    SFFloat    minAngle        0
+    exposedField    MFNode     children        [ ]
+]
+{
+  Transform{
+    rotation 0 1 0 1.5708
+    children [
+      DEF SensorX CylinderSensor{
+        maxAngle IS maxAngle
+        minAngle IS minAngle
+      }
+      DEF AxisX Transform{
+        children [
+          Transform{
+            rotation 0 1 0 -1.5708
+            children IS children
+          }
+        ]
+      }
+    ]
+  }
+  ROUTE SensorX.rotation_changed TO AxisX.set_rotation
+}
+
+PROTO CylinderSensorX [
+    exposedField    SFFloat    maxAngle       -1
+    exposedField    SFFloat    minAngle        0
+    exposedField    MFNode     children        [ ]
+]
+{
+  Transform{
+    rotation 0 0 1 -1.5708
+    children [
+      DEF SensorZ CylinderSensor{
+        maxAngle IS maxAngle
+        minAngle IS minAngle
+      }
+      DEF AxisZ Transform{
+        children [
+          Transform{
+            rotation 0 0 1 1.5708
+            children IS children
+          }
+        ]
+      }
+    ]
+  }
+  ROUTE SensorZ.rotation_changed TO AxisZ.set_rotation
+}
+
+NavigationInfo {
+  avatarSize    0.5
+  headlight     TRUE
+  type  ["EXAMINE", "ANY"]
+}
+
+Background {
+  skyColor 0.4 0.6 0.4
+}
+
+Viewpoint {
+  position    3 0 0.835
+  orientation 0.5770 0.5775 0.5775 2.0935
+}
+
+DEF box3 Humanoid {
+  humanoidBody [
+    DEF WAIST Joint {
+      jointType "fixed"	
+      translation 3.0 -1.0 -0.025
+      rotation 0 0 1 1.57079632679
+      children [
+        DEF BODY Segment { # Stone 1
+	      #====== wood block (cedar tree) ============
+	      mass 0.2
+	      momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+	      #====== aluminum block ==============
+	      #mass 86.4
+	      #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+	        translation 0 0 0
+	        rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                      size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                      material Material {
+                          diffuseColor 0.0 0.0 1.0
+                      }
+                  }
+                }
+	      }
+        } # End of Body
+        
+        DEF STONE_JOINT0 Joint { # Stone 2
+          jointType "fixed"	
+          jointId 0
+          translation 0.33 0.175 0.05
+          rotation 0 0 1 0
+    
+          children [
+            DEF BODYSJ0 Segment {
+	          #====== wood block (cedar tree) ============
+              mass 0.2
+              momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+              #====== aluminum block ==============
+              #mass 86.4
+              #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+            	translation 0 0 0
+                rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                    size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 1.0 1.0 0.0
+                    }
+                  }
+                }
+	      }
+            } # End of BODYSJ0
+          ]
+        } # End of STONE_JOINT0
+        DEF STONE_JOINT1 Joint { # Stone 3
+          jointType "fixed"	
+          jointId 1
+          translation 0.53 -0.175 0.1
+          rotation 0 0 1 0
+    
+          children [
+            DEF BODYSJ1 Segment {
+	          #====== wood block (cedar tree) ============
+              mass 0.2
+              momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+              #====== aluminum block ==============
+              #mass 86.4
+              #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+            	translation 0 0 0
+                rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                    size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 1.0 1.0 0.0
+                    }
+                  }
+                }
+	      }
+            } # End of BODYSJ1
+          ]
+        } # End of STONE_JOINT1
+
+        DEF STONE_JOINT2 Joint { # Stone 4
+          jointType "fixed"	
+          jointId 2
+          translation 0.75 0.175 0.15
+          rotation 0 0 1 0
+    
+          children [
+            DEF BODYSJ2 Segment {
+	          #====== wood block (cedar tree) ============
+              mass 0.2
+              momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+              #====== aluminum block ==============
+              #mass 86.4
+              #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+            	translation 0 0 0
+                rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                    size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 1.0 1.0 0.0
+                    }
+                  }
+                }
+	      }
+            } # End of BODYSJ2
+          ]
+        } # End of STONE_JOINT2
+        DEF STONE_JOINT3 Joint { # Stone 5
+          jointType "fixed"	
+          jointId 3
+          translation 0.95 -0.175 0.2
+          rotation 0 0 1 0
+    
+          children [
+            DEF BODYSJ3 Segment {
+	          #====== wood block (cedar tree) ============
+              mass 0.2
+              momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+              #====== aluminum block ==============
+              #mass 86.4
+              #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+            	translation 0 0 0
+                rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                    size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 1.0 0.0 0.0
+                    }
+                  }
+                }
+	      }
+            } # End of BODYSJ3
+          ]
+        } # End of STONE_JOINT3
+
+        DEF STONE_JOINT4 Joint { # Stone 6
+          jointType "fixed"	
+          jointId 4
+          translation 1.15 0.175 0.2
+          rotation 0 0 1 0
+    
+          children [
+            DEF BODYSJ4 Segment {
+	          #====== wood block (cedar tree) ============
+              mass 0.2
+              momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+              #====== aluminum block ==============
+              #mass 86.4
+              #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+            	translation 0 0 0
+                rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                    size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 1.0 0.0 0.0
+                    }
+                  }
+                }
+	      }
+            } # End of BODYSJ4
+          ]
+        } # End of STONE_JOINT4
+
+        DEF STONE_JOINT5 Joint { # Stone 7
+          jointType "fixed"	
+          jointId 5
+          translation 1.35 -0.175 0.15
+          rotation 0 0 1 0
+    
+          children [
+            DEF BODYSJ5 Segment {
+	          #====== wood block (cedar tree) ============
+              mass 0.2
+              momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+              #====== aluminum block ==============
+              #mass 86.4
+              #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+            	translation 0 0 0
+                rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                    size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 1.0 0.0 0.0
+                    }
+                  }
+                }
+	      }
+            } # End of BODYSJ5
+          ]
+        } # End of STONE_JOINT5
+
+        DEF STONE_JOINT6 Joint { # Stone 8
+          jointType "fixed"	
+          jointId 6
+          translation 1.55 0.175 0.10
+          rotation 0 0 1 0
+    
+          children [
+            DEF BODYSJ6 Segment {
+	          #====== wood block (cedar tree) ============
+              mass 0.2
+              momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+              #====== aluminum block ==============
+              #mass 86.4
+              #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+            	translation 0 0 0
+                rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                    size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 1.0 0.0 0.0
+                    }
+                  }
+                }
+	      }
+            } # End of BODYSJ6
+          ]
+        } # End of STONE_JOINT6
+
+        DEF STONE_JOINT7 Joint { # Stone 9
+          jointType "fixed"	
+          jointId 7
+          translation 1.75 -0.175 0.05
+          rotation 0 0 1 0
+    
+          children [
+            DEF BODYSJ7 Segment {
+	          #====== wood block (cedar tree) ============
+              mass 0.2
+              momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+              #====== aluminum block ==============
+              #mass 86.4
+              #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+            	translation 0 0 0
+                rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                    size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 0.0 0.0 1.0
+                    }
+                  }
+                }
+	      }
+            } # End of BODYSJ7
+          ]
+        } # End of STONE_JOINT7
+        
+        DEF STONE_JOINT8 Joint { # Stone 9
+          jointType "fixed"	
+          jointId 8
+          translation 1.95 0.0 0.05
+          rotation 0 0 1 0
+    
+          children [
+            DEF BODYSJ8 Segment {
+	          #====== wood block (cedar tree) ============
+              mass 0.2
+              momentsOfInertia [0.01 0 0 0 0.001 0 0 0 0.01]
+              #====== aluminum block ==============
+              #mass 86.4
+              #momentsOfInertia [4.896 0 0 0 0.57599 0 0 0 4.896]
+              children Transform {
+            	translation 0 0 0
+                rotation 1 0 0 0
+                children Shape {
+                  geometry Box {
+                    size 0.34 0.34 0.05
+                  }
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 0.0 0.0 1.0
+                    }
+                  }
+                }
+	      }
+            } # End of BODYSJ8
+          ]
+        } # End of STONE_JOINT8
+
+      ]
+    } # End of WAIST
+  ]
+  joints [
+    USE WAIST
+    USE STONE_JOINT0
+    USE STONE_JOINT1
+    USE STONE_JOINT2
+    USE STONE_JOINT3
+    USE STONE_JOINT4
+    USE STONE_JOINT5
+    USE STONE_JOINT6
+    USE STONE_JOINT7
+    USE STONE_JOINT8
+  ]
+  name "box3"
+  segments [
+    USE BODY
+    USE BODYSJ0
+    USE BODYSJ1
+    USE BODYSJ2
+    USE BODYSJ3
+    USE BODYSJ4
+    USE BODYSJ5
+    USE BODYSJ6
+    USE BODYSJ7
+    USE BODYSJ8
+  ]
+}
+

@@ -1,0 +1,20 @@
+This folder contains models of Salle Bauzil specifically made
+to create Octomaps (i.e., all parts are solid and watertight).
+The Makefile also creates 2D maps for navigation by cutting a
+slice between 0.05 and 0.15 m above the ground and projecting
+it to the ground.
+
+ATTENTION: The global scale of the models may be incorrect,
+therefore check the dimensions before using the models.
+
+To build the octomaps:
+  1. Install xsltproc
+  2. Install the Octomap and map_server ROS packages
+  3. Download binvox from http://www.cs.princeton.edu/~min/binvox/
+     and edit the corresponding path in the Makefile
+  4. Export the Blender scene to "X3D Extensible 3D". Make sure to set the axes
+     "Forward" to "X Forward" and "Up" to "Z Up".
+  5. Start a roscore
+  6. make
+
+  

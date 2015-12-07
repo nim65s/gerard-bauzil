@@ -1,0 +1,273 @@
+#VRML V2.0 utf8
+
+PROTO Joint [
+  exposedField     SFVec3f      center              0 0 0
+  exposedField     MFNode       children            []
+  exposedField     MFFloat      llimit              []
+  exposedField     MFFloat      lvlimit             []
+  exposedField     SFRotation   limitOrientation    0 0 1 0
+  exposedField     SFString     name                ""
+  exposedField     SFRotation   rotation            0 0 1 0
+  exposedField     SFVec3f      scale               1 1 1
+  exposedField     SFRotation   scaleOrientation    0 0 1 0
+  exposedField     MFFloat      stiffness           [ 0 0 0 ]
+  exposedField     SFVec3f      translation         0 0 0
+  exposedField     MFFloat      ulimit              []
+  exposedField     MFFloat      uvlimit             []
+  exposedField     SFString     jointType           ""
+  exposedField     SFInt32      jointId             -1
+  exposedField     SFVec3f      jointAxis           0 0 1
+
+  exposedField     SFFloat      gearRatio           1
+  exposedField     SFFloat      rotorInertia        0
+  exposedField     SFFloat      rotorResistor       0
+  exposedField     SFFloat      torqueConst         1
+  exposedField     SFFloat      encoderPulse        1
+]
+{
+  Transform {
+    center           IS center
+    children         IS children
+    rotation         IS rotation
+    scale            IS scale
+    scaleOrientation IS scaleOrientation
+    translation      IS translation
+  }
+}
+
+PROTO Segment [
+  field           SFVec3f     bboxCenter        0 0 0
+  field           SFVec3f     bboxSize          -1 -1 -1
+  exposedField    SFVec3f     centerOfMass      0 0 0
+  exposedField    MFNode      children          [ ]
+  exposedField    SFNode      coord             NULL
+  exposedField    MFNode      displacers        [ ]
+  exposedField    SFFloat     mass              0 
+  exposedField    MFFloat     momentsOfInertia  [ 0 0 0 0 0 0 0 0 0 ]
+  exposedField    SFString    name              ""
+  eventIn         MFNode      addChildren
+  eventIn         MFNode      removeChildren
+]
+{
+  Group {
+    addChildren    IS addChildren
+    bboxCenter     IS bboxCenter
+    bboxSize       IS bboxSize
+    children       IS children
+    removeChildren IS removeChildren
+  }
+}
+
+PROTO Humanoid [
+  field           SFVec3f    bboxCenter            0 0 0
+  field           SFVec3f    bboxSize              -1 -1 -1
+  exposedField    SFVec3f    center                0 0 0
+  exposedField    MFNode     humanoidBody          [ ]
+  exposedField    MFString   info                  [ ]
+  exposedField    MFNode     joints                [ ]
+  exposedField    SFString   name                  ""
+  exposedField    SFRotation rotation              0 0 1 0
+  exposedField    SFVec3f    scale                 1 1 1
+  exposedField    SFRotation scaleOrientation      0 0 1 0
+  exposedField    MFNode     segments              [ ]
+  exposedField    MFNode     sites                 [ ]
+  exposedField    SFVec3f    translation           0 0 0
+  exposedField    SFString   version               "1.1"
+  exposedField    MFNode     viewpoints            [ ]
+]
+{
+  Transform {
+    bboxCenter       IS bboxCenter
+    bboxSize         IS bboxSize
+    center           IS center
+    rotation         IS rotation
+    scale            IS scale
+    scaleOrientation IS scaleOrientation
+    translation      IS translation
+    children [
+      Group {
+        children IS viewpoints
+      }
+      Group {
+        children IS humanoidBody 
+      }
+    ]
+  }
+}
+
+PROTO VisionSensor [
+  exposedField SFVec3f    translation       0 0 0
+  exposedField SFRotation rotation          0 0 1 0
+  exposedField MFNode     children          [ ]
+  exposedField SFFloat    fieldOfView       0.785398
+  exposedField SFString   name              ""
+  exposedField SFFloat    frontClipDistance 0.01
+  exposedField SFFloat    backClipDistance  10.0
+  exposedField SFString   type              "NONE"
+  exposedField SFInt32    sensorId          -1
+  exposedField SFInt32    width             320
+  exposedField SFInt32    height            240
+  exposedField SFFloat    frameRate         30
+]
+{
+  Transform {
+    rotation         IS rotation
+    translation      IS translation
+    children         IS children
+  }
+}
+
+
+PROTO ForceSensor [  
+  exposedField SFVec3f    maxForce    -1 -1 -1
+  exposedField SFVec3f    maxTorque   -1 -1 -1
+  exposedField SFVec3f    translation 0 0 0
+  exposedField SFRotation rotation    0 0 1 0
+  exposedField MFNode     children          [ ]
+  exposedField SFInt32    sensorId    -1
+]
+{
+  Transform {
+    translation IS translation
+    rotation    IS rotation
+    children    IS children
+  }
+}
+
+PROTO Gyro [
+  exposedField SFVec3f    maxAngularVelocity -1 -1 -1
+  exposedField SFVec3f    translation        0 0 0
+  exposedField SFRotation rotation           0 0 1 0
+  exposedField MFNode     children          [ ]
+  exposedField SFInt32    sensorId           -1
+]
+{
+  Transform {
+    translation IS translation
+    rotation    IS rotation
+    children    IS children
+  }
+}
+
+PROTO AccelerationSensor [
+  exposedField SFVec3f    maxAcceleration -1 -1 -1
+  exposedField SFVec3f    translation     0 0 0
+  exposedField SFRotation rotation        0 0 1 0
+  exposedField MFNode     children          [ ]
+  exposedField SFInt32    sensorId        -1
+]
+{
+  Transform {
+    translation IS translation
+    rotation    IS rotation
+    children    IS children
+  }
+}
+
+PROTO Plane [
+  exposedField SFVec3f size 10 10 0
+]
+{
+  Box {
+    size IS size
+  }
+}
+NavigationInfo {
+  avatarSize    0.5
+  headlight     TRUE
+  type  ["EXAMINE", "ANY"]
+}
+
+Background {
+  skyColor 0.4 0.6 0.4
+}
+
+Viewpoint {
+  position    3 0 0.835
+  orientation 0.5770 0.5775 0.5775 2.0935
+}
+
+DEF decoration_object Humanoid{
+  humanoidBody [
+    DEF FIXED_JOINT Joint {
+      jointType "fixed"
+      translation 0.0 0.0 0.0
+      rotation 0 0 1 0.785398163
+      children[
+        DEF OBJECT_DECORATION Segment{
+          mass 2.0 
+          children[
+Transform {
+  scale 1 1 1
+  translation 0 0 0
+  children
+  [
+    Shape
+    {
+      geometry IndexedFaceSet
+      {
+        creaseAngle .5
+        solid FALSE
+        coord Coordinate
+        {
+          point
+          [
+            -7.5 -4 0.1, -5 -4 0.1, -5 -2 0.1, -7.5 -2 0.1, 
+            -7.5 -4 2.34, -5 -4 2.34, -5 -2 2.34, -7.5 -2 2.34, 
+            -5.15 -2 0.1, -5.15 -2 2.25, -6.12 -2 0.1, -6.12 -2 2.25, 
+            -6.12 -2 2.34, -5.15 -2 2.34, -7.4 -3.9 0.1, -5.1 -3.9 0.1, 
+            -5.1 -2.1 0.1, -7.4 -2.1 0.1, -7.4 -3.9 2.34, -5.1 -3.9 2.34, 
+            -5.1 -2.1 2.34, -7.4 -2.1 2.34, -5.15 -2.1 0.1, -5.15 -2.1 2.25, 
+            -6.12 -2.1 0.1, -6.12 -2.1 2.25, -6.12 -2.1 2.34, -5.15 -2.1 2.34, 
+            -6.12 -1.95 0.1, -7 -1.95 0.1, -7 -1.95 2.25, -6.12 -1.95 2.25, 
+            -7 -2 0.1, -7 -2 2.25
+          ]
+        }
+        color Color
+        {
+          color
+          [
+            0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9,
+            0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9,
+            0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9,
+            0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9,
+            0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9,
+            0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9,
+            0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9, 0.9 0.9 0.9,
+          ]
+        }
+        coordIndex
+        [
+          0,1,2,-1, 0,2,3,-1, 1,5,4,-1, 1,4,0,-1, 2,6,5,-1, 2,5,1,-1, 
+          0,4,7,-1, 0,7,3,-1, 11,12,13,-1, 11,13,9,-1, 6,2,8,-1, 6,8,13,-1, 
+          10,3,7,-1, 10,7,12,-1, 14,17,21,-1, 14,21,18,-1, 19,15,14,-1, 19,14,18,-1, 
+          28,29,30,-1, 28,30,31,-1, 30,33,32,-1, 30,32,29,-1, 10,33,30,-1, 10,30,31,-1, 
+          4,18,19,-1, 4,19,5,-1, 5,6,20,-1, 5,20,19,-1, 7,4,18,-1, 7,18,21,-1
+        ]
+      }
+      appearance Appearance
+      {
+        material Material
+        {
+	       ambientIntensity 0.2
+	       diffuseColor 0.9 0.9 0.9
+	       specularColor .1 .1 .1
+	       shininess .5
+        }
+      }
+    }
+  ]
+}
+              ]
+            }
+          ]
+        }
+      ]
+    joints [
+        USE FIXED_JOINT,
+    ]
+    segments [ 	
+        USE OBJECT_DECORATION
+    ]
+}
+

@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <author>O. Stasse</author>
+            <authoring_tool>Emacs</authoring_tool>
+        </contributor>
+        <up_axis>Z_UP</up_axis>
+        <created>Sat Dec 27 7:53:00 2014</created>
+     </asset>
+    <library_images/>
+    <library_effects>
+      <effect id="Material-effect">
+        <profile_COMMON>
+          <technique sid="common">
+            <lambert>
+              <emission>
+                <color>0 0 0 1</color>
+              </emission>
+              <ambient>
+                <color>0 0 0 1</color>
+              </ambient>
+              <diffuse>
+                <color>0.8 0.4 0.0 1</color>
+              </diffuse>
+              <reflective>
+                <color>0 0 0 1</color>
+              </reflective>
+              <reflectivity>
+                <float>0</float>
+              </reflectivity>
+              <transparent>
+                <color>0 0 0 1</color>
+              </transparent>
+              <transparency>
+                <float>1</float>
+              </transparency>
+              <index_of_refraction>
+                <float>1</float>
+              </index_of_refraction>
+            </lambert>
+          </technique>
+        </profile_COMMON>
+      </effect>
+    </library_effects>
+    <library_materials>
+      <material id="Material">
+        <instance_effect url="#Material-effect"/>
+      </material>
+    </library_materials>
+    <library_geometries>
+       <geometry id="Stair-mesh">
+        <mesh>
+        <source id="Stair-mesh-positions">
+          <float_array id="Stair-mesh-positions-array" count="24">
+          0.3  0.5 0 
+          0.3 -0.5 0 
+          0.0 -0.5 0 
+          0.0  0.5 0  
+          0.3  0.5 0.08 
+          0.3 -0.5 0.08 
+          0.0 -0.5 0.08 
+          0.0  0.5 0.08</float_array>
+          <technique_common>
+            <accessor source="#Stair-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Stair-mesh-normals">
+          <float_array id="Stair-mesh-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Stair-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Stair-mesh-vertices">
+          <input semantic="POSITION" source="#Stair-mesh-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Stair-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Stair-mesh-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Platform-mesh">
+        <mesh>
+        <source id="Platform-mesh-positions">
+          <float_array id="Platform-mesh-positions-array" count="24">
+          2.0  0.5 0 
+          2.0 -0.5 0 
+          0.0 -0.5 0 
+          0.0  0.5 0  
+          2.0  0.5 0.08 
+          2.0 -0.5 0.08
+          0.0 -0.5 0.08
+          0.0  0.5 0.08</float_array>
+          <technique_common>
+            <accessor source="#Platform-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Platform-mesh-normals">
+          <float_array id="Platform-mesh-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Platform-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Platform-mesh-vertices">
+          <input semantic="POSITION" source="#Platform-mesh-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Platform-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Platform-mesh-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Long-stick2">
+        <mesh>
+        <source id="Long-stick2-positions">
+          <float_array id="Long-stick2-positions-array" count="24">
+          0.04 0.02 0 
+          0.04 -0.02 0 
+          0.0 -0.02 0 
+          0.0 0.02 0  
+          0.04 0.02 0.02 
+          0.04 -0.02 0.02
+          0.0 -0.02 0.02
+          0.0  0.02 0.02</float_array>
+          <technique_common>
+            <accessor source="#Long-stick2-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Long-stick2-normals">
+          <float_array id="Long-stick2-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Long-stick2-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Long-stick2-vertices">
+          <input semantic="POSITION" source="#Long-stick2-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Long-stick2-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Long-stick2-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Long-stick7">
+        <mesh>
+        <source id="Long-stick7-positions">
+          <float_array id="Long-stick7-positions-array" count="24">
+          0.04  0.02 0 
+          0.04 -0.02 0 
+          0.0 -0.02 0 
+          0.0  0.02 0  
+          0.04  0.02 0.07 
+          0.04 -0.02 0.07
+          0.0 -0.02 0.07
+          0.0  0.02 0.07</float_array>
+          <technique_common>
+            <accessor source="#Long-stick7-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Long-stick7-normals">
+          <float_array id="Long-stick7-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Long-stick7-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Long-stick7-vertices">
+          <input semantic="POSITION" source="#Long-stick7-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Long-stick7-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Long-stick7-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Long-stick12">
+        <mesh>
+        <source id="Long-stick12-positions">
+          <float_array id="Long-stick12-positions-array" count="24">
+          0.04  0.02 0 
+          0.04 -0.02 0 
+          0.0 -0.02 0 
+          0.0  0.02 0  
+          0.04  0.02 0.12 
+          0.04 -0.02 0.12
+          0.0 -0.02 0.12
+          0.0  0.02 0.12</float_array>
+          <technique_common>
+            <accessor source="#Long-stick12-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Long-stick12-normals">
+          <float_array id="Long-stick12-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Long-stick12-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Long-stick12-vertices">
+          <input semantic="POSITION" source="#Long-stick12-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Long-stick12-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Long-stick12-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Long-stick22">
+        <mesh>
+        <source id="Long-stick22-positions">
+          <float_array id="Long-stick22-positions-array" count="24">
+          0.04  0.02 0 
+          0.04 -0.02 0 
+          0.0 -0.02 0 
+          0.0  0.02 0  
+          0.04  0.02 0.22 
+          0.04 -0.02 0.22
+          0.0 -0.02 0.22
+          0.0  0.02 0.22</float_array>
+          <technique_common>
+            <accessor source="#Long-stick22-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Long-stick22-normals">
+          <float_array id="Long-stick22-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Long-stick22-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Long-stick22-vertices">
+          <input semantic="POSITION" source="#Long-stick22-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Long-stick22-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Long-stick22-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Long-stick32">
+        <mesh>
+        <source id="Long-stick32-positions">
+          <float_array id="Long-stick32-positions-array" count="24">
+          0.04  0.02 0 
+          0.04 -0.02 0 
+          0.0 -0.02 0 
+          0.0  0.02 0  
+          0.04  0.02 0.32 
+          0.04 -0.02 0.32
+          0.0 -0.02 0.32
+          0.0  0.02 0.32</float_array>
+          <technique_common>
+            <accessor source="#Long-stick32-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Long-stick32-normals">
+          <float_array id="Long-stick32-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Long-stick32-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Long-stick32-vertices">
+          <input semantic="POSITION" source="#Long-stick32-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Long-stick32-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Long-stick32-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Long-stick42">
+        <mesh>
+        <source id="Long-stick42-positions">
+          <float_array id="Long-stick42-positions-array" count="24">
+          0.04  0.02 0 
+          0.04 -0.02 0 
+          0.0 -0.02 0 
+          0.0  0.02 0  
+          0.04  0.02 0.42 
+          0.04 -0.02 0.42
+          0.0 -0.02 0.42
+          0.0  0.02 0.42</float_array>
+          <technique_common>
+            <accessor source="#Long-stick42-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Long-stick42-normals">
+          <float_array id="Long-stick42-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Long-stick42-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Long-stick42-vertices">
+          <input semantic="POSITION" source="#Long-stick42-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Long-stick42-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Long-stick42-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Long-stick52">
+        <mesh>
+        <source id="Long-stick52-positions">
+          <float_array id="Long-stick52-positions-array" count="24">
+          0.04  0.02 0 
+          0.04 -0.02 0 
+          0.0 -0.02 0 
+          0.0  0.02 0  
+          0.04  0.02 0.52 
+          0.04 -0.02 0.52
+          0.0 -0.02 0.52
+          0.0  0.02 0.52</float_array>
+          <technique_common>
+            <accessor source="#Long-stick52-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Long-stick52-normals">
+          <float_array id="Long-stick52-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Long-stick52-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Long-stick52-vertices">
+          <input semantic="POSITION" source="#Long-stick52-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Long-stick52-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Long-stick52-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Long-stick37">
+        <mesh>
+        <source id="Long-stick37-positions">
+          <float_array id="Long-stick37-positions-array" count="24">
+          0.04  0.02 0 
+          0.04 -0.02 0 
+          0.0 -0.02 0 
+          0.0  0.02 0  
+          0.04  0.02 0.37 
+          0.04 -0.02 0.37
+          0.0 -0.02 0.37
+          0.0  0.02 0.37</float_array>
+          <technique_common>
+            <accessor source="#Long-stick37-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Long-stick37-normals">
+          <float_array id="Long-stick37-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Long-stick37-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Long-stick37-vertices">
+          <input semantic="POSITION" source="#Long-stick37-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Long-stick37-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Long-stick37-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+      <geometry id="Little-platform-mesh">
+        <mesh>
+        <source id="Little-platform-mesh-positions">
+          <float_array id="Little-platform-mesh-positions-array" count="24">
+          1.0 0.5 0 
+          1.0 -0.5 0 
+          0.0 -0.5 0 
+          0.0 0.5 0  
+          1.0 0.5 0.08
+          1.0 -0.5 0.08 
+          0.0 -0.5 0.08 
+          0.0  0.5 0.08</float_array>
+          <technique_common>
+            <accessor source="#Little-platform-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Little-platform-mesh-normals">
+          <float_array id="Litlle-platform-mesh-normals-array" count="24">
+          0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 -0.577349185943 -0.577349185943 
+          -0.577349185943 0.577349185943 -0.577349185943 
+          0.577349185943 0.577349185943 0.577349185943 
+          0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 -0.577349185943 0.577349185943 
+          -0.577349185943 0.577349185943 0.577349185943</float_array>
+          <technique_common>
+            <accessor source="#Little-platform-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Little-platform-mesh-vertices">
+          <input semantic="POSITION" source="#Little-platform-mesh-positions"/>
+        </vertices>
+        <polylist material="Material" count="6">
+          <input semantic="VERTEX" source="#Little-platform-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Little-platform-mesh-normals" offset="1"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p> 0 0 1 0 2 0 3 0 4 1 7 1 6 1 5 1 0 2 4 2 5 2 1 2 1 3 5 3 6 3 2 3 2 4 6 4 7 4 3 4 4 5 0 5 3 5 7 5</p>
+        </polylist>
+      </mesh>
+      </geometry>
+    </library_geometries>
+    <library_visual_scenes>
+        <visual_scene id="VisualSceneNode" name="VisualScene">
+            <node id="stair1" name="node">
+              <translate sid="location">0.25 0.8 0.02</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stair2" name="node">
+              <translate sid="location">0.55 0.8 0.12</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stair3" name="node">
+              <translate sid="location">0.85 0.8 0.22</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+     <node id="stair10" name="node">
+              <translate sid="location">1.15 0.8 0.32</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+ <node id="stair11" name="node">
+              <translate sid="location">1.45 0.8 0.42</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stair4" name="node">
+              <translate sid="location">2.25 -0.30 0.52</translate>
+              <rotate sid="rotationZ">0 0 1 90.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Platform-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stair5" name="node">
+              <translate sid="location">1.25 0.0 0.52</translate>
+              <rotate sid="rotationZ">0 0 1 90.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stair6" name="node">
+              <translate sid="location">0.25 0.0 0.52</translate>
+              <rotate sid="rotationZ">0 0 1 90.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stair7" name="node">
+              <translate sid="location">-0.75 0.0 0.52</translate>
+              <rotate sid="rotationZ">0 0 1 90.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+     <node id="stair12" name="node">
+              <translate sid="location">-1.75 -0.3 0.52</translate>
+              <rotate sid="rotationZ">0 0 1 90.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Little-platform-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stair8" name="node">
+              <translate sid="location">-1.75 0.70 0.37</translate>
+              <rotate sid="rotationZ">0 0 1 90.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stair13" name="node">
+              <translate sid="location">-1.75 1.3 0.07</translate>
+              <rotate sid="rotationZ">0 0 1 90.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stair9" name="node">
+              <translate sid="location">-1.75 1.0 0.22</translate>
+              <rotate sid="rotationZ">0 0 1 90.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Stair-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick1" name="node">
+              <translate sid="location">0.3 1.20 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick2">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick2" name="node">
+              <translate sid="location">0.46 1.20 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick2">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick3" name="node">
+              <translate sid="location">0.46 0.39 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick2">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick4" name="node">
+              <translate sid="location">0.3 0.39 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick2">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick5" name="node">
+              <translate sid="location">0.6 1.2 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick12">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick6" name="node">
+              <translate sid="location">0.76 1.2 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick12">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick7" name="node">
+              <translate sid="location">0.76 0.39 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick12">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick8" name="node">
+              <translate sid="location">0.6 0.39 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick12">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>            
+            <node id="stick9" name="node">
+              <translate sid="location">0.9 1.2 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick22">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick10" name="node">
+              <translate sid="location">1.06 1.2 0.00</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick22">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick11" name="node">
+              <translate sid="location">1.06 0.39 0.00</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick22">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick12" name="node">
+              <translate sid="location">0.9 0.39 0.00</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick22">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick13" name="node">
+              <translate sid="location">1.2 1.2 0.00</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick32">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick14" name="node">
+              <translate sid="location">1.36 1.2 0.00</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick32">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick15" name="node">
+              <translate sid="location">1.36 0.39 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick32">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick16" name="node">
+              <translate sid="location">1.2 0.39 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick32">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick17" name="node">
+              <translate sid="location">1.5 1.2 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick42">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick18" name="node">
+              <translate sid="location">1.66 1.2 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick42">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick19" name="node">
+              <translate sid="location">1.66 0.39 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick42">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick20" name="node">
+              <translate sid="location">1.5 0.39 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick42">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick21" name="node">
+              <translate sid="location">2.62 1.61 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick22" name="node">
+              <translate sid="location">2.62 -0.21 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick23" name="node">
+              <translate sid="location">1.8 -0.21 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick24" name="node">
+              <translate sid="location">1.8 1.61 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick25" name="node">
+              <translate sid="location">1.7 0.08 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick26" name="node">
+              <translate sid="location">0.84 0.08 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick27" name="node">
+              <translate sid="location">0.84 0.24 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick28" name="node">
+              <translate sid="location">1.7 0.24 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick29" name="node">
+              <translate sid="location">0.7 0.08 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick30" name="node">
+              <translate sid="location">-0.16 0.08 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick31" name="node">
+              <translate sid="location">-0.16 0.24 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick32" name="node">
+              <translate sid="location">0.7 0.24 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick33" name="node">
+              <translate sid="location">-0.3 0.08 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick34" name="node">
+              <translate sid="location">-1.2 0.08 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick35" name="node">
+              <translate sid="location">-1.2 0.24 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick36" name="node">
+              <translate sid="location">-0.3 0.24 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick37" name="node">
+              <translate sid="location">-1.34 0.60 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick38" name="node">
+              <translate sid="location">-1.34 -0.24 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>    <node id="stick39" name="node">
+              <translate sid="location">-2.18 -0.24 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+            <node id="stick40" name="node">
+              <translate sid="location">-2.18 0.60 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick52">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick41" name="node">
+              <translate sid="location">-1.34 0.75 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick37">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick42" name="node">
+              <translate sid="location">-2.18 0.75 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick37">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick43" name="node">
+              <translate sid="location">-1.34 0.96 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick37">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick44" name="node">
+              <translate sid="location">-2.18 0.96 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick37">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick45" name="node">
+              <translate sid="location">-1.34 1.05 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick22">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick46" name="node">
+              <translate sid="location">-2.18 1.05 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick22">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick47" name="node">
+              <translate sid="location">-1.34 1.26 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick22">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick48" name="node">
+              <translate sid="location">-2.18 1.26 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick22">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick49" name="node">
+              <translate sid="location">-1.34 1.36 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick7">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick50" name="node">
+              <translate sid="location">-2.18 1.36 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick7">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick51" name="node">
+              <translate sid="location">-1.34 1.55 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick7">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+          <node id="stick52" name="node">
+              <translate sid="location">-2.18 1.55 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Long-stick7">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#VisualSceneNode"/>
+    </scene>
+</COLLADA> 
