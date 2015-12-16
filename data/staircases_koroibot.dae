@@ -42,10 +42,45 @@
           </technique>
         </profile_COMMON>
       </effect>
+      <effect id="Material-effect-gray">
+        <profile_COMMON>
+          <technique sid="common">
+            <lambert>
+              <emission>
+                <color>0 0 0 1</color>
+              </emission>
+              <ambient>
+                <color>0 0 0 1</color>
+              </ambient>
+              <diffuse>
+                <color>0.8 0.8 0.8 1</color>
+              </diffuse>
+              <reflective>
+                <color>0 0 0 1</color>
+              </reflective>
+              <reflectivity>
+                <float>0</float>
+              </reflectivity>
+              <transparent>
+                <color>0 0 0 1</color>
+              </transparent>
+              <transparency>
+                <float>1</float>
+              </transparency>
+              <index_of_refraction>
+                <float>1</float>
+              </index_of_refraction>
+            </lambert>
+          </technique>
+        </profile_COMMON>
+      </effect>
     </library_effects>
     <library_materials>
       <material id="Material">
         <instance_effect url="#Material-effect"/>
+      </material>
+      <material id="Material-gray">
+        <instance_effect url="#Material-effect-gray"/>
       </material>
     </library_materials>
     <library_geometries>
@@ -188,7 +223,7 @@
         <vertices id="Long-stick2-vertices">
           <input semantic="POSITION" source="#Long-stick2-positions"/>
         </vertices>
-        <polylist material="Material" count="6">
+        <polylist material="Material-gray" count="6">
           <input semantic="VERTEX" source="#Long-stick2-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Long-stick2-normals" offset="1"/>
           <vcount>4 4 4 4 4 4 </vcount>
@@ -237,7 +272,7 @@
         <vertices id="Long-stick7-vertices">
           <input semantic="POSITION" source="#Long-stick7-positions"/>
         </vertices>
-        <polylist material="Material" count="6">
+        <polylist material="Material-gray" count="6">
           <input semantic="VERTEX" source="#Long-stick7-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Long-stick7-normals" offset="1"/>
           <vcount>4 4 4 4 4 4 </vcount>
@@ -286,7 +321,7 @@
         <vertices id="Long-stick12-vertices">
           <input semantic="POSITION" source="#Long-stick12-positions"/>
         </vertices>
-        <polylist material="Material" count="6">
+        <polylist material="Material-gray" count="6">
           <input semantic="VERTEX" source="#Long-stick12-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Long-stick12-normals" offset="1"/>
           <vcount>4 4 4 4 4 4 </vcount>
@@ -335,7 +370,7 @@
         <vertices id="Long-stick22-vertices">
           <input semantic="POSITION" source="#Long-stick22-positions"/>
         </vertices>
-        <polylist material="Material" count="6">
+        <polylist material="Material-gray" count="6">
           <input semantic="VERTEX" source="#Long-stick22-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Long-stick22-normals" offset="1"/>
           <vcount>4 4 4 4 4 4 </vcount>
@@ -384,7 +419,7 @@
         <vertices id="Long-stick32-vertices">
           <input semantic="POSITION" source="#Long-stick32-positions"/>
         </vertices>
-        <polylist material="Material" count="6">
+        <polylist material="Material-gray" count="6">
           <input semantic="VERTEX" source="#Long-stick32-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Long-stick32-normals" offset="1"/>
           <vcount>4 4 4 4 4 4 </vcount>
@@ -433,7 +468,7 @@
         <vertices id="Long-stick42-vertices">
           <input semantic="POSITION" source="#Long-stick42-positions"/>
         </vertices>
-        <polylist material="Material" count="6">
+        <polylist material="Material-gray" count="6">
           <input semantic="VERTEX" source="#Long-stick42-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Long-stick42-normals" offset="1"/>
           <vcount>4 4 4 4 4 4 </vcount>
@@ -482,7 +517,7 @@
         <vertices id="Long-stick52-vertices">
           <input semantic="POSITION" source="#Long-stick52-positions"/>
         </vertices>
-        <polylist material="Material" count="6">
+        <polylist material="Material-gray" count="6">
           <input semantic="VERTEX" source="#Long-stick52-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Long-stick52-normals" offset="1"/>
           <vcount>4 4 4 4 4 4 </vcount>
@@ -531,7 +566,7 @@
         <vertices id="Long-stick37-vertices">
           <input semantic="POSITION" source="#Long-stick37-positions"/>
         </vertices>
-        <polylist material="Material" count="6">
+        <polylist material="Material-gray" count="6">
           <input semantic="VERTEX" source="#Long-stick37-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Long-stick37-normals" offset="1"/>
           <vcount>4 4 4 4 4 4 </vcount>
@@ -782,7 +817,7 @@
                 <instance_geometry url="#Long-stick2">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -796,7 +831,7 @@
                 <instance_geometry url="#Long-stick2">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -810,7 +845,7 @@
                 <instance_geometry url="#Long-stick2">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Materia-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -824,7 +859,7 @@
                 <instance_geometry url="#Long-stick2">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -838,7 +873,7 @@
                 <instance_geometry url="#Long-stick12">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -852,7 +887,7 @@
                 <instance_geometry url="#Long-stick12">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -866,7 +901,7 @@
                 <instance_geometry url="#Long-stick12">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -880,7 +915,7 @@
                 <instance_geometry url="#Long-stick12">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -894,7 +929,7 @@
                 <instance_geometry url="#Long-stick22">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -908,7 +943,7 @@
                 <instance_geometry url="#Long-stick22">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -922,7 +957,7 @@
                 <instance_geometry url="#Long-stick22">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -936,7 +971,7 @@
                 <instance_geometry url="#Long-stick22">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -950,7 +985,7 @@
                 <instance_geometry url="#Long-stick32">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -964,7 +999,7 @@
                 <instance_geometry url="#Long-stick32">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -978,7 +1013,7 @@
                 <instance_geometry url="#Long-stick32">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -992,7 +1027,7 @@
                 <instance_geometry url="#Long-stick32">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1006,7 +1041,7 @@
                 <instance_geometry url="#Long-stick42">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1020,7 +1055,7 @@
                 <instance_geometry url="#Long-stick42">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1034,7 +1069,7 @@
                 <instance_geometry url="#Long-stick42">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1048,7 +1083,7 @@
                 <instance_geometry url="#Long-stick42">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1062,7 +1097,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1076,7 +1111,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1090,7 +1125,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1104,7 +1139,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1118,7 +1153,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1132,7 +1167,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1146,7 +1181,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1160,7 +1195,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1174,7 +1209,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1188,7 +1223,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1202,7 +1237,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1216,7 +1251,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1230,7 +1265,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1244,7 +1279,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1258,7 +1293,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1272,7 +1307,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1286,7 +1321,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1300,7 +1335,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1313,7 +1348,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1327,7 +1362,7 @@
                 <instance_geometry url="#Long-stick52">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1341,7 +1376,7 @@
                 <instance_geometry url="#Long-stick37">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1355,7 +1390,7 @@
                 <instance_geometry url="#Long-stick37">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1369,7 +1404,7 @@
                 <instance_geometry url="#Long-stick37">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1383,7 +1418,7 @@
                 <instance_geometry url="#Long-stick37">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1397,7 +1432,7 @@
                 <instance_geometry url="#Long-stick22">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1411,7 +1446,7 @@
                 <instance_geometry url="#Long-stick22">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1425,7 +1460,7 @@
                 <instance_geometry url="#Long-stick22">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1439,7 +1474,7 @@
                 <instance_geometry url="#Long-stick22">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1453,7 +1488,7 @@
                 <instance_geometry url="#Long-stick7">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1467,7 +1502,7 @@
                 <instance_geometry url="#Long-stick7">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1481,7 +1516,7 @@
                 <instance_geometry url="#Long-stick7">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
@@ -1495,7 +1530,7 @@
                 <instance_geometry url="#Long-stick7">
                     <bind_material>
                         <technique_common>
-                          <instance_material symbol="Material" target="#Material"/>
+                          <instance_material symbol="Material-gray" target="#Material-gray"/>
                         </technique_common>    
                     </bind_material>
                 </instance_geometry>
