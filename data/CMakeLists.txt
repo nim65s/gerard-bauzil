@@ -68,7 +68,7 @@ SET(${PROJECT_NAME}_GBDATA
   wall_laas12.obj
   wall_laas13.dae
   wall_laas15.blend
-  wall_laas15.da
+  wall_laas15.dae
   wall_laas15.wrl
 )
 
