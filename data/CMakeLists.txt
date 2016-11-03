@@ -51,6 +51,7 @@ SET(${PROJECT_NAME}_GBDATA
   staircases_koroibot_hr.dae
   staircases_koroibot_hr.mtl
   staircases_koroibot_hr.obj
+  staircases_koroibot_hr.wrl
   staircases_v2.dae
   staircases_v3.dae
   stairs.wrl
