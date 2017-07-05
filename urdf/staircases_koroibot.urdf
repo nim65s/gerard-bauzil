@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<robot name="staircase">
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://gerard-bauzil/staircases_koroibot_hr.dae"/>
+      </geometry>
+    </visual>
+    <!--<visual>-->
+      <!--<origin rpy="0 0 0" xyz="0 0 0"/>-->
+      <!--<geometry>-->
+        <!--<mesh filename="package://gerard-bauzil/wall_laas15.dae"/>-->
+        <!--</geometry>-->
+      <!--</visual>-->
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://gerard-bauzil/staircases_koroibot_hr.dae"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
+
