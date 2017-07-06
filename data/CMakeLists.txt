@@ -23,6 +23,7 @@ SET(${PROJECT_NAME}_GBDATA
   blue_column2.wrl
   blue_column3.wrl
   box-steppingstones.wrl
+  cobblestone.dae
   cylinder.dae
   desktop_v2.obj
   desktop.wrl
