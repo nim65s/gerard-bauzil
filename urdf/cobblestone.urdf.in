@@ -3,7 +3,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://gerard-bauzil/cobblestone.dae"/>
+        <mesh filename="@CMAKE_INSTALL_PREFIX@/share/gerard_bauzil/cobblestone.dae"/>
       </geometry>
       <material name="red">
         <color rgba="0.52 0.31 0.29 1"/>
@@ -12,7 +12,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://gerard-bauzil/cobblestone.dae"/>
+        <mesh filename="@CMAKE_INSTALL_PREFIX@/share/gerard_bauzil/cobblestone.dae"/>
       </geometry>
     </collision>
     <inertial>
