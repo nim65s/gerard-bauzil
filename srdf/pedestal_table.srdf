@@ -1,7 +1,19 @@
 <?xml version="1.0"?>
 <robot name="pedestral_table">
-  <handle name="pose" clearance="0.05">
-    <position> 0.015  0.0175 0.5475 1 0 0 0 </position>
+  <gripper name="pose" clearance="0.05">
+    <position> -0.075  0 1.095 -0.5 0.5 0.5 0.5 </position>
     <link name="base_link"/>
-  </handle>
+  </gripper>
+  <contact name="support">
+    <link name="base_link"/>
+    <point>
+      +0.15 -0.175 1.095 
+      +0.15 +0.175 1.095 
+      -0.15 +0.175 1.095 
+      -0.15 -0.175 1.095 
+    </point>
+    <shape>
+      4 0 1 2 3
+    </shape>
+  </contact>
 </robot>

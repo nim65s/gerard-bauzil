@@ -1,7 +1,7 @@
 <robot name="table">
   <link name="base_link">
     <visual>
-      <origin xyz="0 0 -0.5475" />
+      <origin xyz="0 0 0.5475" />
       <geometry>
         <box size="0.30 0.35 1.095"/>
       </geometry>
