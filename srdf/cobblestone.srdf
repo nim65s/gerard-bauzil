@@ -1,15 +1,19 @@
 <?xml version="1.0"?>
 <robot name="cobblestone">
   <handle name="handle1" clearance="0.05">
-    <position> 0.0  0.05 -0.024  0.5  -0.5  0.5  -0.5 </position>
+    <position> 0.0  0.05 -0.024  0.5  0.5  -0.5  -0.5 </position>
     <link name="base_link"/>
   </handle>
   <handle name="handle2" clearance="0.05">
     <position> 0.0 -0.05 -0.024 0.5 0.5 0.5 0.5 </position>
     <link name="base_link"/>
   </handle>
-  <handle name="pose" clearance="0.05">
-    <position> -0.071 0 -0.024 1 0 0 0 </position>
+  <handle name="pose1" clearance="0.05">
+    <position> -0.072 0 -0.024 1 0 0 0 </position>
+    <link name="base_link"/>
+  </handle>
+  <handle name="pose2" clearance="0.05">
+    <position> 0.072 0 -0.024 0 0 0 1 </position>
     <link name="base_link"/>
   </handle>
 
