@@ -1,7 +1,8 @@
 <launch>
-  <group ns="pedestal_table">
+  <arg name="prefix"/>
+  <group ns="$(arg)">
     <param name="robot_description" textfile="$(find gerard_bauzil)/urdf/pedestal_table.urdf"/>
-    <param name="tf_prefix" value="/pedestal_table"/>
+    <param name="tf_prefix" value="/$(arg prefix)"/>
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
     </node>
   </group>
