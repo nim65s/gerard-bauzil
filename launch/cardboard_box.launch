@@ -1,0 +1,11 @@
+<launch>
+  <group ns="cardboard_box">
+    <param name="robot_description" textfile="$(find gerard_bauzil)/urdf/cardboard_box.urdf"/>
+    <param name="tf_prefix" value="/cardboard_box"/>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+      <!-- <remap from="robot_description" to="cardboard_box/robot_description" />
+      <remap from="tf_prefix" to="/cardboard_box/tf_prefix" /> -->
+      <remap from="joint_states" to="/cardboard_box/joint_states" />
+    </node>
+  </group>
+</launch>
