@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="plank_of_wood">
+  <!--TODO: Add handles-->
+  <handle name="handle1" clearance="0.08">
+    <position>  0.055 0 0  0 0 0 1 </position>
+    <link name="base_link"/>
+  </handle>
+  <handle name="handle2" clearance="0.08">
+    <position> -0.055 0 0  0 0 0 1 </position>
+    <link name="base_link"/>
+  </handle>
+
+  <contact name="bottom_surface">
+    <link name="base_link"/>
+    <point>
+      +0.102 +0.022 -0.058
+      +0.102 -0.022 -0.058
+      -0.102 -0.022 -0.058
+      -0.102 +0.022 -0.058
+    </point>
+    <shape>
+      4 0 1 2 3
+    </shape>
+  </contact>
+</robot>
