@@ -4,24 +4,69 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="plank_of_wood2" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <handle clearance="0.08" name="handle1">
-    <position>  0.1015 0 0  0 0 0 1 </position>
+  <handle name="handle1" clearance="0.08">
+    <position> -0.055 0 0  1 0 0 0 </position>
     <link name="base_link"/>
   </handle>
-  <handle clearance="0.08" name="handle2">
-    <position> -0.1015 0 0  0 0 0 1 </position>
+  <handle name="handle2" clearance="0.08">
+    <position> 0.055 0 0  0 0 0 1 </position>
     <link name="base_link"/>
   </handle>
+  <handle name="handle3" clearance="0.08">
+    <position>  -0.055 0 0  0 1 0 0 </position>
+    <link name="base_link"/>
+  </handle>
+  <handle name="handle4" clearance="0.08">
+    <position>  0.055 0 0  0 0 1 0 </position>
+    <link name="base_link"/>
+  </handle>
+
   <contact name="bottom_surface">
     <link name="base_link"/>
     <point>
-      +0.102 +0.022 -0.058
-      +0.102 -0.022 -0.058
-      -0.102 -0.022 -0.058
-      -0.102 +0.022 -0.058
+      +0.105 +0.02 -0.071
+      +0.105 -0.02 -0.071
+      -0.105 -0.02 -0.071
+      -0.105 +0.02 -0.071
     </point>
     <shape>
       4 0 1 2 3
+    </shape>
+  </contact>
+  <contact name="top_surface">
+    <link name="base_link"/>
+    <point>
+      +0.1015 +0.022 0.058
+      +0.1015 -0.022 0.058
+      -0.1015 -0.022 0.058
+      -0.1015 +0.022 0.058
+    </point>
+    <shape>
+      4 3 2 1 0
+    </shape>
+  </contact>
+  <contact name="front_surface">
+    <link name="base_link"/>
+    <point>
+      +0.1015 +0.022 +0.058
+      +0.1015 -0.022 +0.058
+      +0.1015 -0.022 -0.058
+      +0.1015 +0.022 -0.058
+    </point>
+    <shape>
+      4 0 1 2 3
+    </shape>
+  </contact>
+  <contact name="rear_surface">
+    <link name="base_link"/>
+    <point>
+      -0.1015 +0.022 +0.058
+      -0.1015 -0.022 +0.058
+      -0.1015 -0.022 -0.058
+      -0.1015 +0.022 -0.058
+    </point>
+    <shape>
+      4 3 2 1 0
     </shape>
   </contact>
 </robot>
