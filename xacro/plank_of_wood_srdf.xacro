@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
-<robot name="plank_of_wood">
-  <!--TODO: Add handles-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="plank_of_wood$(arg number)">
   <handle name="handle1" clearance="0.08">
-    <position>  0.055 0 0  0 0 0 1 </position>
+    <position>  0.1015 0 0  0 0 0 1 </position>
     <link name="base_link"/>
   </handle>
   <handle name="handle2" clearance="0.08">
-    <position> -0.055 0 0  0 0 0 1 </position>
+    <position> -0.1015 0 0  0 0 0 1 </position>
     <link name="base_link"/>
   </handle>
 
