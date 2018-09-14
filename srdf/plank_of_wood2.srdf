@@ -5,19 +5,19 @@
 <!-- =================================================================================== -->
 <robot name="plank_of_wood2" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <handle name="handle1" clearance="0.08">
-    <position> -0.055 0 0  1 0 0 0 </position>
+    <position> -0.055 0 0  0.707106781187 -0.707106781187 0 0 </position>
     <link name="base_link"/>
   </handle>
   <handle name="handle2" clearance="0.08">
-    <position> 0.055 0 0  0 0 0 1 </position>
+    <position> 0.055 0 0  0 0 -0.707106781187 0.707106781187 </position>
     <link name="base_link"/>
   </handle>
   <handle name="handle3" clearance="0.08">
-    <position>  -0.055 0 0  0 1 0 0 </position>
+    <position>  -0.055 0 0  0.707106781187 0.707106781187 0 0 </position>
     <link name="base_link"/>
   </handle>
   <handle name="handle4" clearance="0.08">
-    <position>  0.055 0 0  0 0 1 0 </position>
+    <position>  0.055 0 0  0 0 0.707106781187 0.707106781187 </position>
     <link name="base_link"/>
   </handle>
 
