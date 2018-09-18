@@ -1,0 +1,9 @@
+<launch>
+  <arg name="prefix"/>
+  <group ns="$(arg prefix)">
+    <param name="robot_description" textfile="$(find gerard_bauzil)/urdf/table_140_70_73.urdf"/>
+    <param name="tf_prefix" value="/$(arg prefix)"/>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+    </node>
+  </group>
+</launch>
