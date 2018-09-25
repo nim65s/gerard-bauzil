@@ -1,0 +1,12 @@
+<launch>
+  <arg name="prefix"/>
+  <group ns="$(arg prefix)">
+    <param name="robot_description" textfile="$(find gerard_bauzil)/urdf/cardboard_box.urdf"/>
+    <param name="tf_prefix" value="/$(arg prefix)"/>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+      <!-- <remap from="robot_description" to="$(arg prefix)/robot_description" />
+      <remap from="tf_prefix" to="/$(arg prefix)/tf_prefix" />
+      <remap from="joint_states" to="/$(arg prefix)/joint_states" /> -->
+    </node>
+  </group>
+</launch>
