@@ -21,53 +21,53 @@
     <link name="base_link"/>
   </handle>
 
-  <contact name="bottom_surface">
-    <link name="base_link"/>
-    <point>
-      +0.105 +0.02 -0.071
-      +0.105 -0.02 -0.071
-      -0.105 -0.02 -0.071
-      -0.105 +0.02 -0.071
-    </point>
-    <shape>
-      4 0 1 2 3
-    </shape>
-  </contact>
-  <contact name="top_surface">
-    <link name="base_link"/>
-    <point>
-      +0.1015 +0.022 0.058
-      +0.1015 -0.022 0.058
-      -0.1015 -0.022 0.058
-      -0.1015 +0.022 0.058
-    </point>
-    <shape>
-      4 3 2 1 0
-    </shape>
-  </contact>
   <contact name="front_surface">
     <link name="base_link"/>
     <point>
-      +0.1015 +0.022 +0.058
-      +0.1015 -0.022 +0.058
-      +0.1015 -0.022 -0.058
-      +0.1015 +0.022 -0.058
+      +0.1015 +0.058 +0.0215
+      +0.1015 +0.058 -0.0215
+      +0.1015 -0.058 -0.0215
+      +0.1015 -0.058 +0.0215
     </point>
     <shape>
-      4 0 1 2 3
+      4 3 2 1 0
     </shape>
   </contact>
   <contact name="rear_surface">
     <link name="base_link"/>
     <point>
-      -0.1015 +0.022 +0.058
-      -0.1015 -0.022 +0.058
-      -0.1015 -0.022 -0.058
-      -0.1015 +0.022 -0.058
+      -0.1015 +0.058 +0.0215
+      -0.1015 +0.058 -0.0215
+      -0.1015 -0.058 -0.0215
+      -0.1015 -0.058 +0.0215
+    </point>
+    <shape>
+      4 0 1 2 3
+    </shape>
+  </contact>
+  <contact name="left_surface">
+    <link name="base_link"/>
+    <point>
+      +0.1015 +0.058 +0.0215
+      +0.1015 +0.058 -0.0215
+      -0.1015 +0.058 -0.0215
+      -0.1015 +0.058 +0.0215
+    </point>
+    <shape>
+      4 0 1 2 3
+    </shape>
+  </contact>
+  <contact name="right_surface">
+    <link name="base_link"/>
+    <point>
+      +0.1015 -0.058 +0.0215
+      +0.1015 -0.058 -0.0215
+      -0.1015 -0.058 -0.0215
+      -0.1015 -0.058 +0.0215
     </point>
     <shape>
       4 3 2 1 0
     </shape>
-  </contact>
+    </contact>
 </robot>
 
