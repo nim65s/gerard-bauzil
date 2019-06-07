@@ -1,4 +1,13 @@
 <?xml version="1.0" ?>
 <robot name="staircase">
+  <contact name="small-platform">
+    <link name="base_link" object="base_link_0" />
+    <point>
+      -1.25 -0.30 0.6
+      -1.25  0.70 0.6
+      -2.25  0.70 0.6
+      -2.25 -0.30 0.6
+    </point>
+    <shape> 4 0 1 2 3 </shape>
+  </contact>
 </robot>
-
