@@ -1,0 +1,4 @@
+                                                                -*- outline -*-
+New in 1.1.0
+* Add SRDF file with a contact surface on small platform.
+* Fix staircases_koroibot.urdf: gerard-bauzil -> gerard_bauzil.
