@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="apriltag">
+  <xacro:macro name="apriltag_36h11" params="name id size">
+    <link name="${name}">
+      <visual>
+        <origin xyz="0 0 0.00001"/>
+        <geometry>
+          <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/${id}.dae" scale="${size} ${size} 1." />
+        </geometry>
+      </visual>
+    </link>
+  </xacro:macro>
+</robot>

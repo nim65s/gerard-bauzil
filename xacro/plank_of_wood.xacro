@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="plank_of_wood$(arg number)">
+  <xacro:include filename="apriltag.xacro"/>
+
   <link name="base_link">
     <visual>
       <geometry>
@@ -11,7 +13,7 @@
     </visual>
     <collision>
       <geometry>
-        <box size="0.203 0.043 0.116"/>
+        <box size="0.203 0.116 0.043"/>
       </geometry>
     </collision>
     <inertial>
@@ -21,14 +23,10 @@
   </link>
 
   <xacro:macro name="tag" params="number x y side *material">
-    <link name="tag36_11_000${number}">
-      <visual>
-        <geometry>
-          <box size="0.06 0.06 0.002"/>
-        </geometry>
-        <xacro:insert_block name="material" />
-      </visual>
-    </link>
+    <!-- the size 0.075 corresponds to 60mm * 10 / 8 because the DAE includes white pixels on the border.-->
+    <xacro:apriltag_36h11 name="tag36_11_000${number}"
+      id="tag36_11_000${number}"
+      size="0.075" />
     <joint name="tag36_11_000${number}_joint" type="fixed">
       <parent link="base_link"/>
       <child  link="tag36_11_000${number}"/>
