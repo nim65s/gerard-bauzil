@@ -25,12 +25,10 @@
   </link>
   <link name="tag36_11_00030">
     <visual>
+      <origin xyz="0 0 0.00001"/>
       <geometry>
-        <box size="0.06 0.06 0.002"/>
+        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00030.dae" scale="0.075 0.075 1."/>
       </geometry>
-      <material name="red">
-        <color rgba="0.8 0 0 1"/>
-      </material>
     </visual>
   </link>
   <joint name="tag36_11_00030_joint" type="fixed">
@@ -40,12 +38,10 @@
   </joint>
   <link name="tag36_11_00031">
     <visual>
+      <origin xyz="0 0 0.00001"/>
       <geometry>
-        <box size="0.06 0.06 0.002"/>
+        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00031.dae" scale="0.075 0.075 1."/>
       </geometry>
-      <material name="green">
-        <color rgba="0 0.8 0 1"/>
-      </material>
     </visual>
   </link>
   <joint name="tag36_11_00031_joint" type="fixed">
@@ -55,12 +51,10 @@
   </joint>
   <link name="tag36_11_00032">
     <visual>
+      <origin xyz="0 0 0.00001"/>
       <geometry>
-        <box size="0.06 0.06 0.002"/>
+        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00032.dae" scale="0.075 0.075 1."/>
       </geometry>
-      <material name="blue">
-        <color rgba="0 0 0.8 1"/>
-      </material>
     </visual>
   </link>
   <joint name="tag36_11_00032_joint" type="fixed">
@@ -70,12 +64,10 @@
   </joint>
   <link name="tag36_11_00033">
     <visual>
+      <origin xyz="0 0 0.00001"/>
       <geometry>
-        <box size="0.06 0.06 0.002"/>
+        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00033.dae" scale="0.075 0.075 1."/>
       </geometry>
-      <material name="brown">
-        <color rgba="0.8 0.8 0 1"/>
-      </material>
     </visual>
   </link>
   <joint name="tag36_11_00033_joint" type="fixed">

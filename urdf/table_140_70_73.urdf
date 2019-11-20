@@ -77,12 +77,10 @@
   <!-- tag36_11_00004 -->
   <link name="tag36_11_00004">
     <visual>
+      <origin xyz="0 0 0.0005"/>
       <geometry>
-        <box size="0.0635 0.0635 0.002"/>
+        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00004.dae" scale="0.075 0.075 1." />
       </geometry>
-      <material name="red">
-        <color rgba="0.8 0 0 1"/>
-      </material>
     </visual>
   </link>
   <joint name="tag36_11_00004_joint" type="fixed">
@@ -93,12 +91,10 @@
   <!-- tag36_11_00005 -->
   <link name="tag36_11_00005">
     <visual>
+      <origin xyz="0 0 0.0005"/>
       <geometry>
-        <box size="0.0635 0.0635 0.002"/>
+        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00005.dae" scale="0.075 0.075 1." />
       </geometry>
-      <material name="red">
-        <color rgba="0.8 0 0 1"/>
-      </material>
     </visual>
   </link>
   <joint name="tag36_11_00005_joint" type="fixed">
