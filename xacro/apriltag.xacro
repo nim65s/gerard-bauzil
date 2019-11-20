@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="apriltag">
+  <xacro:arg name="make_urdf" default="false"/>
+
   <xacro:macro name="apriltag_36h11" params="name id size">
     <link name="${name}">
       <visual>
@@ -10,4 +12,26 @@
       </visual>
     </link>
   </xacro:macro>
+
+  <xacro:if value="$(arg make_urdf)">
+    <xacro:arg name="name" default=""/>
+    <xacro:arg name="id"   default=""/>
+    <xacro:arg name="size" default=""/>
+
+    <!-- check args -->
+    <xacro:property name="name" value="$(arg name)"/>
+    <xacro:if value="${name == ''}">
+      <xacro:ERROR_incorret_parameter_name/>
+    </xacro:if>
+    <xacro:property name="id" value="$(arg id)"/>
+    <xacro:if value="${id == ''}">
+      <xacro:ERROR_incorret_parameter_id/>
+    </xacro:if>
+    <xacro:property name="size" value="$(arg size)"/>
+    <xacro:if value="${size == '' or float(size) != float(size)}">
+      <xacro:ERROR_incorret_parameter_size/>
+    </xacro:if>
+
+    <xacro:apriltag_36h11 name="$(arg name)" id="$(arg id)" size="$(arg size)"/>
+  </xacro:if>
 </robot>
