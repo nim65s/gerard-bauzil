@@ -134,7 +134,7 @@
   <joint name="tag36_11_00011_joint" type="fixed">
     <parent link="table_link"/>
     <child link="tag36_11_00011"/>
-    <origin xyz="-0.199 -0.256 0.75" rpy="0 0 0" />
+    <origin xyz="-0.199 -0.256 0.75" rpy="0 0 -1.5707963267948966" />
   </joint>
   <!-- tag36_11_00010 -->
   <link name="tag36_11_00010">
@@ -148,7 +148,7 @@
   <joint name="tag36_11_00010_joint" type="fixed">
     <parent link="table_link"/>
     <child link="tag36_11_00010"/>
-    <origin xyz="0.202 0.0075 0.75" rpy="0 0 0" />
+    <origin xyz="0.202 0.0075 0.75" rpy="0 0 -1.5707963267948966" />
   </joint>
 </robot>
 
