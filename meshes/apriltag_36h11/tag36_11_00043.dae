@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.78.0 commit date:2016-09-26, commit time:12:42, hash:4bb1e22</authoring_tool>
     </contributor>
-    <created>2019-11-05T17:30:41</created>
-    <modified>2019-11-05T17:30:41</modified>
+    <created>2019-11-22T16:26:26</created>
+    <modified>2019-11-22T16:26:26</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -825,7 +825,7 @@
         <vertices id="Plane_022-mesh-vertices">
           <input semantic="POSITION" source="#Plane_022-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_022-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_022-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -891,7 +891,7 @@
         <vertices id="Plane_024-mesh-vertices">
           <input semantic="POSITION" source="#Plane_024-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_024-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_024-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -990,7 +990,7 @@
         <vertices id="Plane_027-mesh-vertices">
           <input semantic="POSITION" source="#Plane_027-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_027-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_027-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1221,7 +1221,7 @@
         <vertices id="Plane_034-mesh-vertices">
           <input semantic="POSITION" source="#Plane_034-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_034-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_034-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1254,7 +1254,7 @@
         <vertices id="Plane_035-mesh-vertices">
           <input semantic="POSITION" source="#Plane_035-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_035-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_035-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1287,7 +1287,7 @@
         <vertices id="Plane_036-mesh-vertices">
           <input semantic="POSITION" source="#Plane_036-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_036-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_036-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1320,7 +1320,7 @@
         <vertices id="Plane_037-mesh-vertices">
           <input semantic="POSITION" source="#Plane_037-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_037-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_037-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1485,7 +1485,7 @@
         <vertices id="Plane_042-mesh-vertices">
           <input semantic="POSITION" source="#Plane_042-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_042-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_042-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1551,7 +1551,7 @@
         <vertices id="Plane_044-mesh-vertices">
           <input semantic="POSITION" source="#Plane_044-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_044-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_044-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1617,7 +1617,7 @@
         <vertices id="Plane_046-mesh-vertices">
           <input semantic="POSITION" source="#Plane_046-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_046-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_046-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1815,7 +1815,7 @@
         <vertices id="Plane_052-mesh-vertices">
           <input semantic="POSITION" source="#Plane_052-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_052-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_052-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1914,7 +1914,7 @@
         <vertices id="Plane_055-mesh-vertices">
           <input semantic="POSITION" source="#Plane_055-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_055-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_055-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1947,7 +1947,7 @@
         <vertices id="Plane_056-mesh-vertices">
           <input semantic="POSITION" source="#Plane_056-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_056-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_056-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -1980,7 +1980,7 @@
         <vertices id="Plane_057-mesh-vertices">
           <input semantic="POSITION" source="#Plane_057-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_057-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_057-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -2178,7 +2178,7 @@
         <vertices id="Plane_063-mesh-vertices">
           <input semantic="POSITION" source="#Plane_063-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_063-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_063-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -2310,7 +2310,7 @@
         <vertices id="Plane_067-mesh-vertices">
           <input semantic="POSITION" source="#Plane_067-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_067-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_067-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -2475,7 +2475,7 @@
         <vertices id="Plane_072-mesh-vertices">
           <input semantic="POSITION" source="#Plane_072-mesh-positions"/>
         </vertices>
-        <polylist material="black-material" count="2">
+        <polylist material="white-material" count="2">
           <input semantic="VERTEX" source="#Plane_072-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_072-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -2508,7 +2508,7 @@
         <vertices id="Plane_073-mesh-vertices">
           <input semantic="POSITION" source="#Plane_073-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_073-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_073-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -2607,7 +2607,7 @@
         <vertices id="Plane_076-mesh-vertices">
           <input semantic="POSITION" source="#Plane_076-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_076-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_076-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -2640,7 +2640,7 @@
         <vertices id="Plane_077-mesh-vertices">
           <input semantic="POSITION" source="#Plane_077-mesh-positions"/>
         </vertices>
-        <polylist material="white-material" count="2">
+        <polylist material="black-material" count="2">
           <input semantic="VERTEX" source="#Plane_077-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane_077-mesh-normals" offset="1"/>
           <vcount>3 3 </vcount>
@@ -3603,7 +3603,7 @@
         <instance_geometry url="#Plane_022-mesh" name="pixel_02_02">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3623,7 +3623,7 @@
         <instance_geometry url="#Plane_024-mesh" name="pixel_02_04">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3653,7 +3653,7 @@
         <instance_geometry url="#Plane_027-mesh" name="pixel_02_07">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3723,7 +3723,7 @@
         <instance_geometry url="#Plane_034-mesh" name="pixel_03_04">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3733,7 +3733,7 @@
         <instance_geometry url="#Plane_035-mesh" name="pixel_03_05">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3743,7 +3743,7 @@
         <instance_geometry url="#Plane_036-mesh" name="pixel_03_06">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3753,7 +3753,7 @@
         <instance_geometry url="#Plane_037-mesh" name="pixel_03_07">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3803,7 +3803,7 @@
         <instance_geometry url="#Plane_042-mesh" name="pixel_04_02">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3823,7 +3823,7 @@
         <instance_geometry url="#Plane_044-mesh" name="pixel_04_04">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3843,7 +3843,7 @@
         <instance_geometry url="#Plane_046-mesh" name="pixel_04_06">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3903,7 +3903,7 @@
         <instance_geometry url="#Plane_052-mesh" name="pixel_05_02">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3933,7 +3933,7 @@
         <instance_geometry url="#Plane_055-mesh" name="pixel_05_05">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3943,7 +3943,7 @@
         <instance_geometry url="#Plane_056-mesh" name="pixel_05_06">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -3953,7 +3953,7 @@
         <instance_geometry url="#Plane_057-mesh" name="pixel_05_07">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -4013,7 +4013,7 @@
         <instance_geometry url="#Plane_063-mesh" name="pixel_06_03">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -4053,7 +4053,7 @@
         <instance_geometry url="#Plane_067-mesh" name="pixel_06_07">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -4103,7 +4103,7 @@
         <instance_geometry url="#Plane_072-mesh" name="pixel_07_02">
           <bind_material>
             <technique_common>
-              <instance_material symbol="black-material" target="#black-material"/>
+              <instance_material symbol="white-material" target="#white-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -4113,7 +4113,7 @@
         <instance_geometry url="#Plane_073-mesh" name="pixel_07_03">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -4143,7 +4143,7 @@
         <instance_geometry url="#Plane_076-mesh" name="pixel_07_06">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
@@ -4153,7 +4153,7 @@
         <instance_geometry url="#Plane_077-mesh" name="pixel_07_07">
           <bind_material>
             <technique_common>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="black-material" target="#black-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
