@@ -127,7 +127,7 @@
     <visual>
       <origin xyz="0 0 0.0005"/>
       <geometry>
-        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00011.dae" scale="0.0635 0.0635 1." />
+        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00011.dae" scale="0.060 0.060 1." />
       </geometry>
     </visual>
   </link>
@@ -141,7 +141,7 @@
     <visual>
       <origin xyz="0 0 0.0005"/>
       <geometry>
-        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00010.dae" scale="0.075 0.075 1." />
+        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00010.dae" scale="0.060 0.060 1." />
       </geometry>
     </visual>
   </link>

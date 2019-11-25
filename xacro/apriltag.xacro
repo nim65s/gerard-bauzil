@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="apriltag">
   <xacro:arg name="make_urdf" default="false"/>
 
+  <!-- param size: size of the April tag in meters, excluding the white border. -->
   <xacro:macro name="apriltag_36h11" params="name id size">
     <link name="${name}">
       <visual>

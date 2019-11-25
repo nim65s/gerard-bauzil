@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.78.0 commit date:2016-09-26, commit time:12:42, hash:4bb1e22</authoring_tool>
     </contributor>
-    <created>2019-11-22T16:26:25</created>
-    <modified>2019-11-22T16:26:25</modified>
+    <created>2019-11-25T16:23:26</created>
+    <modified>2019-11-25T16:23:26</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -77,7 +77,7 @@
     <geometry id="Plane-mesh" name="Plane">
       <mesh>
         <source id="Plane-mesh-positions">
-          <float_array id="Plane-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -110,7 +110,7 @@
     <geometry id="Plane_001-mesh" name="Plane.001">
       <mesh>
         <source id="Plane_001-mesh-positions">
-          <float_array id="Plane_001-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_001-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_001-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -143,7 +143,7 @@
     <geometry id="Plane_002-mesh" name="Plane.002">
       <mesh>
         <source id="Plane_002-mesh-positions">
-          <float_array id="Plane_002-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_002-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_002-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -176,7 +176,7 @@
     <geometry id="Plane_003-mesh" name="Plane.003">
       <mesh>
         <source id="Plane_003-mesh-positions">
-          <float_array id="Plane_003-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_003-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_003-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -209,7 +209,7 @@
     <geometry id="Plane_004-mesh" name="Plane.004">
       <mesh>
         <source id="Plane_004-mesh-positions">
-          <float_array id="Plane_004-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_004-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_004-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -242,7 +242,7 @@
     <geometry id="Plane_005-mesh" name="Plane.005">
       <mesh>
         <source id="Plane_005-mesh-positions">
-          <float_array id="Plane_005-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_005-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_005-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -275,7 +275,7 @@
     <geometry id="Plane_006-mesh" name="Plane.006">
       <mesh>
         <source id="Plane_006-mesh-positions">
-          <float_array id="Plane_006-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_006-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_006-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -308,7 +308,7 @@
     <geometry id="Plane_007-mesh" name="Plane.007">
       <mesh>
         <source id="Plane_007-mesh-positions">
-          <float_array id="Plane_007-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_007-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_007-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -341,7 +341,7 @@
     <geometry id="Plane_008-mesh" name="Plane.008">
       <mesh>
         <source id="Plane_008-mesh-positions">
-          <float_array id="Plane_008-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_008-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_008-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -374,7 +374,7 @@
     <geometry id="Plane_009-mesh" name="Plane.009">
       <mesh>
         <source id="Plane_009-mesh-positions">
-          <float_array id="Plane_009-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_009-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_009-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -407,7 +407,7 @@
     <geometry id="Plane_010-mesh" name="Plane.010">
       <mesh>
         <source id="Plane_010-mesh-positions">
-          <float_array id="Plane_010-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_010-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_010-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -440,7 +440,7 @@
     <geometry id="Plane_011-mesh" name="Plane.011">
       <mesh>
         <source id="Plane_011-mesh-positions">
-          <float_array id="Plane_011-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_011-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_011-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -473,7 +473,7 @@
     <geometry id="Plane_012-mesh" name="Plane.012">
       <mesh>
         <source id="Plane_012-mesh-positions">
-          <float_array id="Plane_012-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_012-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_012-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -506,7 +506,7 @@
     <geometry id="Plane_013-mesh" name="Plane.013">
       <mesh>
         <source id="Plane_013-mesh-positions">
-          <float_array id="Plane_013-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_013-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_013-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -539,7 +539,7 @@
     <geometry id="Plane_014-mesh" name="Plane.014">
       <mesh>
         <source id="Plane_014-mesh-positions">
-          <float_array id="Plane_014-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_014-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_014-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -572,7 +572,7 @@
     <geometry id="Plane_015-mesh" name="Plane.015">
       <mesh>
         <source id="Plane_015-mesh-positions">
-          <float_array id="Plane_015-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_015-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_015-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -605,7 +605,7 @@
     <geometry id="Plane_016-mesh" name="Plane.016">
       <mesh>
         <source id="Plane_016-mesh-positions">
-          <float_array id="Plane_016-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_016-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_016-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -638,7 +638,7 @@
     <geometry id="Plane_017-mesh" name="Plane.017">
       <mesh>
         <source id="Plane_017-mesh-positions">
-          <float_array id="Plane_017-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_017-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_017-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -671,7 +671,7 @@
     <geometry id="Plane_018-mesh" name="Plane.018">
       <mesh>
         <source id="Plane_018-mesh-positions">
-          <float_array id="Plane_018-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_018-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_018-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -704,7 +704,7 @@
     <geometry id="Plane_019-mesh" name="Plane.019">
       <mesh>
         <source id="Plane_019-mesh-positions">
-          <float_array id="Plane_019-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_019-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_019-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -737,7 +737,7 @@
     <geometry id="Plane_020-mesh" name="Plane.020">
       <mesh>
         <source id="Plane_020-mesh-positions">
-          <float_array id="Plane_020-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_020-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_020-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -770,7 +770,7 @@
     <geometry id="Plane_021-mesh" name="Plane.021">
       <mesh>
         <source id="Plane_021-mesh-positions">
-          <float_array id="Plane_021-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_021-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_021-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -803,7 +803,7 @@
     <geometry id="Plane_022-mesh" name="Plane.022">
       <mesh>
         <source id="Plane_022-mesh-positions">
-          <float_array id="Plane_022-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_022-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_022-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -836,7 +836,7 @@
     <geometry id="Plane_023-mesh" name="Plane.023">
       <mesh>
         <source id="Plane_023-mesh-positions">
-          <float_array id="Plane_023-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_023-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_023-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -869,7 +869,7 @@
     <geometry id="Plane_024-mesh" name="Plane.024">
       <mesh>
         <source id="Plane_024-mesh-positions">
-          <float_array id="Plane_024-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_024-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_024-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -902,7 +902,7 @@
     <geometry id="Plane_025-mesh" name="Plane.025">
       <mesh>
         <source id="Plane_025-mesh-positions">
-          <float_array id="Plane_025-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_025-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_025-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -935,7 +935,7 @@
     <geometry id="Plane_026-mesh" name="Plane.026">
       <mesh>
         <source id="Plane_026-mesh-positions">
-          <float_array id="Plane_026-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_026-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_026-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -968,7 +968,7 @@
     <geometry id="Plane_027-mesh" name="Plane.027">
       <mesh>
         <source id="Plane_027-mesh-positions">
-          <float_array id="Plane_027-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_027-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_027-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1001,7 +1001,7 @@
     <geometry id="Plane_028-mesh" name="Plane.028">
       <mesh>
         <source id="Plane_028-mesh-positions">
-          <float_array id="Plane_028-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_028-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_028-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1034,7 +1034,7 @@
     <geometry id="Plane_029-mesh" name="Plane.029">
       <mesh>
         <source id="Plane_029-mesh-positions">
-          <float_array id="Plane_029-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_029-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_029-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1067,7 +1067,7 @@
     <geometry id="Plane_030-mesh" name="Plane.030">
       <mesh>
         <source id="Plane_030-mesh-positions">
-          <float_array id="Plane_030-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_030-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_030-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1100,7 +1100,7 @@
     <geometry id="Plane_031-mesh" name="Plane.031">
       <mesh>
         <source id="Plane_031-mesh-positions">
-          <float_array id="Plane_031-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_031-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_031-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1133,7 +1133,7 @@
     <geometry id="Plane_032-mesh" name="Plane.032">
       <mesh>
         <source id="Plane_032-mesh-positions">
-          <float_array id="Plane_032-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_032-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_032-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1166,7 +1166,7 @@
     <geometry id="Plane_033-mesh" name="Plane.033">
       <mesh>
         <source id="Plane_033-mesh-positions">
-          <float_array id="Plane_033-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_033-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_033-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1199,7 +1199,7 @@
     <geometry id="Plane_034-mesh" name="Plane.034">
       <mesh>
         <source id="Plane_034-mesh-positions">
-          <float_array id="Plane_034-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_034-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_034-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1232,7 +1232,7 @@
     <geometry id="Plane_035-mesh" name="Plane.035">
       <mesh>
         <source id="Plane_035-mesh-positions">
-          <float_array id="Plane_035-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_035-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_035-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1265,7 +1265,7 @@
     <geometry id="Plane_036-mesh" name="Plane.036">
       <mesh>
         <source id="Plane_036-mesh-positions">
-          <float_array id="Plane_036-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_036-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_036-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1298,7 +1298,7 @@
     <geometry id="Plane_037-mesh" name="Plane.037">
       <mesh>
         <source id="Plane_037-mesh-positions">
-          <float_array id="Plane_037-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_037-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_037-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1331,7 +1331,7 @@
     <geometry id="Plane_038-mesh" name="Plane.038">
       <mesh>
         <source id="Plane_038-mesh-positions">
-          <float_array id="Plane_038-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_038-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_038-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1364,7 +1364,7 @@
     <geometry id="Plane_039-mesh" name="Plane.039">
       <mesh>
         <source id="Plane_039-mesh-positions">
-          <float_array id="Plane_039-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_039-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_039-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1397,7 +1397,7 @@
     <geometry id="Plane_040-mesh" name="Plane.040">
       <mesh>
         <source id="Plane_040-mesh-positions">
-          <float_array id="Plane_040-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_040-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_040-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1430,7 +1430,7 @@
     <geometry id="Plane_041-mesh" name="Plane.041">
       <mesh>
         <source id="Plane_041-mesh-positions">
-          <float_array id="Plane_041-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_041-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_041-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1463,7 +1463,7 @@
     <geometry id="Plane_042-mesh" name="Plane.042">
       <mesh>
         <source id="Plane_042-mesh-positions">
-          <float_array id="Plane_042-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_042-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_042-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1496,7 +1496,7 @@
     <geometry id="Plane_043-mesh" name="Plane.043">
       <mesh>
         <source id="Plane_043-mesh-positions">
-          <float_array id="Plane_043-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_043-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_043-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1529,7 +1529,7 @@
     <geometry id="Plane_044-mesh" name="Plane.044">
       <mesh>
         <source id="Plane_044-mesh-positions">
-          <float_array id="Plane_044-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_044-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_044-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1562,7 +1562,7 @@
     <geometry id="Plane_045-mesh" name="Plane.045">
       <mesh>
         <source id="Plane_045-mesh-positions">
-          <float_array id="Plane_045-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_045-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_045-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1595,7 +1595,7 @@
     <geometry id="Plane_046-mesh" name="Plane.046">
       <mesh>
         <source id="Plane_046-mesh-positions">
-          <float_array id="Plane_046-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_046-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_046-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1628,7 +1628,7 @@
     <geometry id="Plane_047-mesh" name="Plane.047">
       <mesh>
         <source id="Plane_047-mesh-positions">
-          <float_array id="Plane_047-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_047-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_047-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1661,7 +1661,7 @@
     <geometry id="Plane_048-mesh" name="Plane.048">
       <mesh>
         <source id="Plane_048-mesh-positions">
-          <float_array id="Plane_048-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_048-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_048-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1694,7 +1694,7 @@
     <geometry id="Plane_049-mesh" name="Plane.049">
       <mesh>
         <source id="Plane_049-mesh-positions">
-          <float_array id="Plane_049-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_049-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_049-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1727,7 +1727,7 @@
     <geometry id="Plane_050-mesh" name="Plane.050">
       <mesh>
         <source id="Plane_050-mesh-positions">
-          <float_array id="Plane_050-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_050-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_050-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1760,7 +1760,7 @@
     <geometry id="Plane_051-mesh" name="Plane.051">
       <mesh>
         <source id="Plane_051-mesh-positions">
-          <float_array id="Plane_051-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_051-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_051-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1793,7 +1793,7 @@
     <geometry id="Plane_052-mesh" name="Plane.052">
       <mesh>
         <source id="Plane_052-mesh-positions">
-          <float_array id="Plane_052-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_052-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_052-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1826,7 +1826,7 @@
     <geometry id="Plane_053-mesh" name="Plane.053">
       <mesh>
         <source id="Plane_053-mesh-positions">
-          <float_array id="Plane_053-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_053-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_053-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1859,7 +1859,7 @@
     <geometry id="Plane_054-mesh" name="Plane.054">
       <mesh>
         <source id="Plane_054-mesh-positions">
-          <float_array id="Plane_054-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_054-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_054-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1892,7 +1892,7 @@
     <geometry id="Plane_055-mesh" name="Plane.055">
       <mesh>
         <source id="Plane_055-mesh-positions">
-          <float_array id="Plane_055-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_055-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_055-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1925,7 +1925,7 @@
     <geometry id="Plane_056-mesh" name="Plane.056">
       <mesh>
         <source id="Plane_056-mesh-positions">
-          <float_array id="Plane_056-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_056-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_056-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1958,7 +1958,7 @@
     <geometry id="Plane_057-mesh" name="Plane.057">
       <mesh>
         <source id="Plane_057-mesh-positions">
-          <float_array id="Plane_057-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_057-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_057-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -1991,7 +1991,7 @@
     <geometry id="Plane_058-mesh" name="Plane.058">
       <mesh>
         <source id="Plane_058-mesh-positions">
-          <float_array id="Plane_058-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_058-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_058-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2024,7 +2024,7 @@
     <geometry id="Plane_059-mesh" name="Plane.059">
       <mesh>
         <source id="Plane_059-mesh-positions">
-          <float_array id="Plane_059-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_059-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_059-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2057,7 +2057,7 @@
     <geometry id="Plane_060-mesh" name="Plane.060">
       <mesh>
         <source id="Plane_060-mesh-positions">
-          <float_array id="Plane_060-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_060-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_060-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2090,7 +2090,7 @@
     <geometry id="Plane_061-mesh" name="Plane.061">
       <mesh>
         <source id="Plane_061-mesh-positions">
-          <float_array id="Plane_061-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_061-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_061-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2123,7 +2123,7 @@
     <geometry id="Plane_062-mesh" name="Plane.062">
       <mesh>
         <source id="Plane_062-mesh-positions">
-          <float_array id="Plane_062-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_062-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_062-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2156,7 +2156,7 @@
     <geometry id="Plane_063-mesh" name="Plane.063">
       <mesh>
         <source id="Plane_063-mesh-positions">
-          <float_array id="Plane_063-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_063-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_063-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2189,7 +2189,7 @@
     <geometry id="Plane_064-mesh" name="Plane.064">
       <mesh>
         <source id="Plane_064-mesh-positions">
-          <float_array id="Plane_064-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_064-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_064-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2222,7 +2222,7 @@
     <geometry id="Plane_065-mesh" name="Plane.065">
       <mesh>
         <source id="Plane_065-mesh-positions">
-          <float_array id="Plane_065-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_065-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_065-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2255,7 +2255,7 @@
     <geometry id="Plane_066-mesh" name="Plane.066">
       <mesh>
         <source id="Plane_066-mesh-positions">
-          <float_array id="Plane_066-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_066-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_066-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2288,7 +2288,7 @@
     <geometry id="Plane_067-mesh" name="Plane.067">
       <mesh>
         <source id="Plane_067-mesh-positions">
-          <float_array id="Plane_067-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_067-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_067-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2321,7 +2321,7 @@
     <geometry id="Plane_068-mesh" name="Plane.068">
       <mesh>
         <source id="Plane_068-mesh-positions">
-          <float_array id="Plane_068-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_068-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_068-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2354,7 +2354,7 @@
     <geometry id="Plane_069-mesh" name="Plane.069">
       <mesh>
         <source id="Plane_069-mesh-positions">
-          <float_array id="Plane_069-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_069-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_069-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2387,7 +2387,7 @@
     <geometry id="Plane_070-mesh" name="Plane.070">
       <mesh>
         <source id="Plane_070-mesh-positions">
-          <float_array id="Plane_070-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_070-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_070-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2420,7 +2420,7 @@
     <geometry id="Plane_071-mesh" name="Plane.071">
       <mesh>
         <source id="Plane_071-mesh-positions">
-          <float_array id="Plane_071-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_071-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_071-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2453,7 +2453,7 @@
     <geometry id="Plane_072-mesh" name="Plane.072">
       <mesh>
         <source id="Plane_072-mesh-positions">
-          <float_array id="Plane_072-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_072-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_072-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2486,7 +2486,7 @@
     <geometry id="Plane_073-mesh" name="Plane.073">
       <mesh>
         <source id="Plane_073-mesh-positions">
-          <float_array id="Plane_073-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_073-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_073-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2519,7 +2519,7 @@
     <geometry id="Plane_074-mesh" name="Plane.074">
       <mesh>
         <source id="Plane_074-mesh-positions">
-          <float_array id="Plane_074-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_074-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_074-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2552,7 +2552,7 @@
     <geometry id="Plane_075-mesh" name="Plane.075">
       <mesh>
         <source id="Plane_075-mesh-positions">
-          <float_array id="Plane_075-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_075-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_075-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2585,7 +2585,7 @@
     <geometry id="Plane_076-mesh" name="Plane.076">
       <mesh>
         <source id="Plane_076-mesh-positions">
-          <float_array id="Plane_076-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_076-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_076-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2618,7 +2618,7 @@
     <geometry id="Plane_077-mesh" name="Plane.077">
       <mesh>
         <source id="Plane_077-mesh-positions">
-          <float_array id="Plane_077-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_077-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_077-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2651,7 +2651,7 @@
     <geometry id="Plane_078-mesh" name="Plane.078">
       <mesh>
         <source id="Plane_078-mesh-positions">
-          <float_array id="Plane_078-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_078-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_078-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2684,7 +2684,7 @@
     <geometry id="Plane_079-mesh" name="Plane.079">
       <mesh>
         <source id="Plane_079-mesh-positions">
-          <float_array id="Plane_079-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_079-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_079-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2717,7 +2717,7 @@
     <geometry id="Plane_080-mesh" name="Plane.080">
       <mesh>
         <source id="Plane_080-mesh-positions">
-          <float_array id="Plane_080-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_080-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_080-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2750,7 +2750,7 @@
     <geometry id="Plane_081-mesh" name="Plane.081">
       <mesh>
         <source id="Plane_081-mesh-positions">
-          <float_array id="Plane_081-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_081-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_081-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2783,7 +2783,7 @@
     <geometry id="Plane_082-mesh" name="Plane.082">
       <mesh>
         <source id="Plane_082-mesh-positions">
-          <float_array id="Plane_082-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_082-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_082-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2816,7 +2816,7 @@
     <geometry id="Plane_083-mesh" name="Plane.083">
       <mesh>
         <source id="Plane_083-mesh-positions">
-          <float_array id="Plane_083-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_083-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_083-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2849,7 +2849,7 @@
     <geometry id="Plane_084-mesh" name="Plane.084">
       <mesh>
         <source id="Plane_084-mesh-positions">
-          <float_array id="Plane_084-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_084-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_084-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2882,7 +2882,7 @@
     <geometry id="Plane_085-mesh" name="Plane.085">
       <mesh>
         <source id="Plane_085-mesh-positions">
-          <float_array id="Plane_085-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_085-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_085-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2915,7 +2915,7 @@
     <geometry id="Plane_086-mesh" name="Plane.086">
       <mesh>
         <source id="Plane_086-mesh-positions">
-          <float_array id="Plane_086-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_086-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_086-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2948,7 +2948,7 @@
     <geometry id="Plane_087-mesh" name="Plane.087">
       <mesh>
         <source id="Plane_087-mesh-positions">
-          <float_array id="Plane_087-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_087-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_087-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -2981,7 +2981,7 @@
     <geometry id="Plane_088-mesh" name="Plane.088">
       <mesh>
         <source id="Plane_088-mesh-positions">
-          <float_array id="Plane_088-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_088-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_088-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3014,7 +3014,7 @@
     <geometry id="Plane_089-mesh" name="Plane.089">
       <mesh>
         <source id="Plane_089-mesh-positions">
-          <float_array id="Plane_089-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_089-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_089-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3047,7 +3047,7 @@
     <geometry id="Plane_090-mesh" name="Plane.090">
       <mesh>
         <source id="Plane_090-mesh-positions">
-          <float_array id="Plane_090-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_090-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_090-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3080,7 +3080,7 @@
     <geometry id="Plane_091-mesh" name="Plane.091">
       <mesh>
         <source id="Plane_091-mesh-positions">
-          <float_array id="Plane_091-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_091-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_091-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3113,7 +3113,7 @@
     <geometry id="Plane_092-mesh" name="Plane.092">
       <mesh>
         <source id="Plane_092-mesh-positions">
-          <float_array id="Plane_092-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_092-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_092-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3146,7 +3146,7 @@
     <geometry id="Plane_093-mesh" name="Plane.093">
       <mesh>
         <source id="Plane_093-mesh-positions">
-          <float_array id="Plane_093-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_093-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_093-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3179,7 +3179,7 @@
     <geometry id="Plane_094-mesh" name="Plane.094">
       <mesh>
         <source id="Plane_094-mesh-positions">
-          <float_array id="Plane_094-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_094-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_094-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3212,7 +3212,7 @@
     <geometry id="Plane_095-mesh" name="Plane.095">
       <mesh>
         <source id="Plane_095-mesh-positions">
-          <float_array id="Plane_095-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_095-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_095-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3245,7 +3245,7 @@
     <geometry id="Plane_096-mesh" name="Plane.096">
       <mesh>
         <source id="Plane_096-mesh-positions">
-          <float_array id="Plane_096-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_096-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_096-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3278,7 +3278,7 @@
     <geometry id="Plane_097-mesh" name="Plane.097">
       <mesh>
         <source id="Plane_097-mesh-positions">
-          <float_array id="Plane_097-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_097-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_097-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3311,7 +3311,7 @@
     <geometry id="Plane_098-mesh" name="Plane.098">
       <mesh>
         <source id="Plane_098-mesh-positions">
-          <float_array id="Plane_098-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_098-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_098-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3344,7 +3344,7 @@
     <geometry id="Plane_099-mesh" name="Plane.099">
       <mesh>
         <source id="Plane_099-mesh-positions">
-          <float_array id="Plane_099-mesh-positions-array" count="12">-0.04999995 -0.04999995 0 0.04999995 -0.04999995 0 -0.04999995 0.04999995 0 0.04999995 0.04999995 0</float_array>
+          <float_array id="Plane_099-mesh-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
           <technique_common>
             <accessor source="#Plane_099-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -3379,7 +3379,7 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="pixel_00_00" name="pixel_00_00" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane-mesh" name="pixel_00_00">
           <bind_material>
             <technique_common>
@@ -3389,7 +3389,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_00_01" name="pixel_00_01" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_001-mesh" name="pixel_00_01">
           <bind_material>
             <technique_common>
@@ -3399,7 +3399,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_00_02" name="pixel_00_02" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_002-mesh" name="pixel_00_02">
           <bind_material>
             <technique_common>
@@ -3409,7 +3409,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_00_03" name="pixel_00_03" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_003-mesh" name="pixel_00_03">
           <bind_material>
             <technique_common>
@@ -3419,7 +3419,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_00_04" name="pixel_00_04" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_004-mesh" name="pixel_00_04">
           <bind_material>
             <technique_common>
@@ -3429,7 +3429,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_00_05" name="pixel_00_05" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_005-mesh" name="pixel_00_05">
           <bind_material>
             <technique_common>
@@ -3439,7 +3439,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_00_06" name="pixel_00_06" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_006-mesh" name="pixel_00_06">
           <bind_material>
             <technique_common>
@@ -3449,7 +3449,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_00_07" name="pixel_00_07" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_007-mesh" name="pixel_00_07">
           <bind_material>
             <technique_common>
@@ -3459,7 +3459,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_00_08" name="pixel_00_08" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_008-mesh" name="pixel_00_08">
           <bind_material>
             <technique_common>
@@ -3469,7 +3469,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_00_09" name="pixel_00_09" type="NODE">
-        <matrix sid="transform">1 0 0 -0.45 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_009-mesh" name="pixel_00_09">
           <bind_material>
             <technique_common>
@@ -3479,7 +3479,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_00" name="pixel_01_00" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_010-mesh" name="pixel_01_00">
           <bind_material>
             <technique_common>
@@ -3489,7 +3489,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_01" name="pixel_01_01" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_011-mesh" name="pixel_01_01">
           <bind_material>
             <technique_common>
@@ -3499,7 +3499,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_02" name="pixel_01_02" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_012-mesh" name="pixel_01_02">
           <bind_material>
             <technique_common>
@@ -3509,7 +3509,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_03" name="pixel_01_03" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_013-mesh" name="pixel_01_03">
           <bind_material>
             <technique_common>
@@ -3519,7 +3519,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_04" name="pixel_01_04" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_014-mesh" name="pixel_01_04">
           <bind_material>
             <technique_common>
@@ -3529,7 +3529,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_05" name="pixel_01_05" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_015-mesh" name="pixel_01_05">
           <bind_material>
             <technique_common>
@@ -3539,7 +3539,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_06" name="pixel_01_06" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_016-mesh" name="pixel_01_06">
           <bind_material>
             <technique_common>
@@ -3549,7 +3549,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_07" name="pixel_01_07" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_017-mesh" name="pixel_01_07">
           <bind_material>
             <technique_common>
@@ -3559,7 +3559,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_08" name="pixel_01_08" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_018-mesh" name="pixel_01_08">
           <bind_material>
             <technique_common>
@@ -3569,7 +3569,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_01_09" name="pixel_01_09" type="NODE">
-        <matrix sid="transform">1 0 0 -0.35 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_019-mesh" name="pixel_01_09">
           <bind_material>
             <technique_common>
@@ -3579,7 +3579,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_00" name="pixel_02_00" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_020-mesh" name="pixel_02_00">
           <bind_material>
             <technique_common>
@@ -3589,7 +3589,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_01" name="pixel_02_01" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_021-mesh" name="pixel_02_01">
           <bind_material>
             <technique_common>
@@ -3599,7 +3599,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_02" name="pixel_02_02" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_022-mesh" name="pixel_02_02">
           <bind_material>
             <technique_common>
@@ -3609,7 +3609,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_03" name="pixel_02_03" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_023-mesh" name="pixel_02_03">
           <bind_material>
             <technique_common>
@@ -3619,7 +3619,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_04" name="pixel_02_04" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_024-mesh" name="pixel_02_04">
           <bind_material>
             <technique_common>
@@ -3629,7 +3629,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_05" name="pixel_02_05" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_025-mesh" name="pixel_02_05">
           <bind_material>
             <technique_common>
@@ -3639,7 +3639,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_06" name="pixel_02_06" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_026-mesh" name="pixel_02_06">
           <bind_material>
             <technique_common>
@@ -3649,7 +3649,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_07" name="pixel_02_07" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_027-mesh" name="pixel_02_07">
           <bind_material>
             <technique_common>
@@ -3659,7 +3659,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_08" name="pixel_02_08" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_028-mesh" name="pixel_02_08">
           <bind_material>
             <technique_common>
@@ -3669,7 +3669,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_02_09" name="pixel_02_09" type="NODE">
-        <matrix sid="transform">1 0 0 -0.25 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_029-mesh" name="pixel_02_09">
           <bind_material>
             <technique_common>
@@ -3679,7 +3679,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_00" name="pixel_03_00" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_030-mesh" name="pixel_03_00">
           <bind_material>
             <technique_common>
@@ -3689,7 +3689,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_01" name="pixel_03_01" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_031-mesh" name="pixel_03_01">
           <bind_material>
             <technique_common>
@@ -3699,7 +3699,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_02" name="pixel_03_02" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_032-mesh" name="pixel_03_02">
           <bind_material>
             <technique_common>
@@ -3709,7 +3709,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_03" name="pixel_03_03" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_033-mesh" name="pixel_03_03">
           <bind_material>
             <technique_common>
@@ -3719,7 +3719,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_04" name="pixel_03_04" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_034-mesh" name="pixel_03_04">
           <bind_material>
             <technique_common>
@@ -3729,7 +3729,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_05" name="pixel_03_05" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_035-mesh" name="pixel_03_05">
           <bind_material>
             <technique_common>
@@ -3739,7 +3739,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_06" name="pixel_03_06" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_036-mesh" name="pixel_03_06">
           <bind_material>
             <technique_common>
@@ -3749,7 +3749,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_07" name="pixel_03_07" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_037-mesh" name="pixel_03_07">
           <bind_material>
             <technique_common>
@@ -3759,7 +3759,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_08" name="pixel_03_08" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_038-mesh" name="pixel_03_08">
           <bind_material>
             <technique_common>
@@ -3769,7 +3769,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_03_09" name="pixel_03_09" type="NODE">
-        <matrix sid="transform">1 0 0 -0.15 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_039-mesh" name="pixel_03_09">
           <bind_material>
             <technique_common>
@@ -3779,7 +3779,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_00" name="pixel_04_00" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_040-mesh" name="pixel_04_00">
           <bind_material>
             <technique_common>
@@ -3789,7 +3789,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_01" name="pixel_04_01" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_041-mesh" name="pixel_04_01">
           <bind_material>
             <technique_common>
@@ -3799,7 +3799,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_02" name="pixel_04_02" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_042-mesh" name="pixel_04_02">
           <bind_material>
             <technique_common>
@@ -3809,7 +3809,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_03" name="pixel_04_03" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_043-mesh" name="pixel_04_03">
           <bind_material>
             <technique_common>
@@ -3819,7 +3819,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_04" name="pixel_04_04" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_044-mesh" name="pixel_04_04">
           <bind_material>
             <technique_common>
@@ -3829,7 +3829,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_05" name="pixel_04_05" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_045-mesh" name="pixel_04_05">
           <bind_material>
             <technique_common>
@@ -3839,7 +3839,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_06" name="pixel_04_06" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_046-mesh" name="pixel_04_06">
           <bind_material>
             <technique_common>
@@ -3849,7 +3849,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_07" name="pixel_04_07" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_047-mesh" name="pixel_04_07">
           <bind_material>
             <technique_common>
@@ -3859,7 +3859,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_08" name="pixel_04_08" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_048-mesh" name="pixel_04_08">
           <bind_material>
             <technique_common>
@@ -3869,7 +3869,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_04_09" name="pixel_04_09" type="NODE">
-        <matrix sid="transform">1 0 0 -0.05 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_049-mesh" name="pixel_04_09">
           <bind_material>
             <technique_common>
@@ -3879,7 +3879,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_00" name="pixel_05_00" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_050-mesh" name="pixel_05_00">
           <bind_material>
             <technique_common>
@@ -3889,7 +3889,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_01" name="pixel_05_01" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_051-mesh" name="pixel_05_01">
           <bind_material>
             <technique_common>
@@ -3899,7 +3899,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_02" name="pixel_05_02" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_052-mesh" name="pixel_05_02">
           <bind_material>
             <technique_common>
@@ -3909,7 +3909,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_03" name="pixel_05_03" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_053-mesh" name="pixel_05_03">
           <bind_material>
             <technique_common>
@@ -3919,7 +3919,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_04" name="pixel_05_04" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_054-mesh" name="pixel_05_04">
           <bind_material>
             <technique_common>
@@ -3929,7 +3929,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_05" name="pixel_05_05" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_055-mesh" name="pixel_05_05">
           <bind_material>
             <technique_common>
@@ -3939,7 +3939,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_06" name="pixel_05_06" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_056-mesh" name="pixel_05_06">
           <bind_material>
             <technique_common>
@@ -3949,7 +3949,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_07" name="pixel_05_07" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_057-mesh" name="pixel_05_07">
           <bind_material>
             <technique_common>
@@ -3959,7 +3959,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_08" name="pixel_05_08" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_058-mesh" name="pixel_05_08">
           <bind_material>
             <technique_common>
@@ -3969,7 +3969,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_05_09" name="pixel_05_09" type="NODE">
-        <matrix sid="transform">1 0 0 0.05 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_059-mesh" name="pixel_05_09">
           <bind_material>
             <technique_common>
@@ -3979,7 +3979,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_00" name="pixel_06_00" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_060-mesh" name="pixel_06_00">
           <bind_material>
             <technique_common>
@@ -3989,7 +3989,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_01" name="pixel_06_01" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_061-mesh" name="pixel_06_01">
           <bind_material>
             <technique_common>
@@ -3999,7 +3999,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_02" name="pixel_06_02" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_062-mesh" name="pixel_06_02">
           <bind_material>
             <technique_common>
@@ -4009,7 +4009,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_03" name="pixel_06_03" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_063-mesh" name="pixel_06_03">
           <bind_material>
             <technique_common>
@@ -4019,7 +4019,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_04" name="pixel_06_04" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_064-mesh" name="pixel_06_04">
           <bind_material>
             <technique_common>
@@ -4029,7 +4029,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_05" name="pixel_06_05" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_065-mesh" name="pixel_06_05">
           <bind_material>
             <technique_common>
@@ -4039,7 +4039,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_06" name="pixel_06_06" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_066-mesh" name="pixel_06_06">
           <bind_material>
             <technique_common>
@@ -4049,7 +4049,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_07" name="pixel_06_07" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_067-mesh" name="pixel_06_07">
           <bind_material>
             <technique_common>
@@ -4059,7 +4059,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_08" name="pixel_06_08" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_068-mesh" name="pixel_06_08">
           <bind_material>
             <technique_common>
@@ -4069,7 +4069,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_06_09" name="pixel_06_09" type="NODE">
-        <matrix sid="transform">1 0 0 0.15 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_069-mesh" name="pixel_06_09">
           <bind_material>
             <technique_common>
@@ -4079,7 +4079,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_00" name="pixel_07_00" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_070-mesh" name="pixel_07_00">
           <bind_material>
             <technique_common>
@@ -4089,7 +4089,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_01" name="pixel_07_01" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_071-mesh" name="pixel_07_01">
           <bind_material>
             <technique_common>
@@ -4099,7 +4099,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_02" name="pixel_07_02" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_072-mesh" name="pixel_07_02">
           <bind_material>
             <technique_common>
@@ -4109,7 +4109,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_03" name="pixel_07_03" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_073-mesh" name="pixel_07_03">
           <bind_material>
             <technique_common>
@@ -4119,7 +4119,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_04" name="pixel_07_04" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_074-mesh" name="pixel_07_04">
           <bind_material>
             <technique_common>
@@ -4129,7 +4129,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_05" name="pixel_07_05" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_075-mesh" name="pixel_07_05">
           <bind_material>
             <technique_common>
@@ -4139,7 +4139,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_06" name="pixel_07_06" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_076-mesh" name="pixel_07_06">
           <bind_material>
             <technique_common>
@@ -4149,7 +4149,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_07" name="pixel_07_07" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_077-mesh" name="pixel_07_07">
           <bind_material>
             <technique_common>
@@ -4159,7 +4159,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_08" name="pixel_07_08" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_078-mesh" name="pixel_07_08">
           <bind_material>
             <technique_common>
@@ -4169,7 +4169,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_07_09" name="pixel_07_09" type="NODE">
-        <matrix sid="transform">1 0 0 0.25 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_079-mesh" name="pixel_07_09">
           <bind_material>
             <technique_common>
@@ -4179,7 +4179,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_00" name="pixel_08_00" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_080-mesh" name="pixel_08_00">
           <bind_material>
             <technique_common>
@@ -4189,7 +4189,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_01" name="pixel_08_01" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_081-mesh" name="pixel_08_01">
           <bind_material>
             <technique_common>
@@ -4199,7 +4199,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_02" name="pixel_08_02" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_082-mesh" name="pixel_08_02">
           <bind_material>
             <technique_common>
@@ -4209,7 +4209,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_03" name="pixel_08_03" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_083-mesh" name="pixel_08_03">
           <bind_material>
             <technique_common>
@@ -4219,7 +4219,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_04" name="pixel_08_04" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_084-mesh" name="pixel_08_04">
           <bind_material>
             <technique_common>
@@ -4229,7 +4229,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_05" name="pixel_08_05" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_085-mesh" name="pixel_08_05">
           <bind_material>
             <technique_common>
@@ -4239,7 +4239,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_06" name="pixel_08_06" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_086-mesh" name="pixel_08_06">
           <bind_material>
             <technique_common>
@@ -4249,7 +4249,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_07" name="pixel_08_07" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_087-mesh" name="pixel_08_07">
           <bind_material>
             <technique_common>
@@ -4259,7 +4259,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_08" name="pixel_08_08" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_088-mesh" name="pixel_08_08">
           <bind_material>
             <technique_common>
@@ -4269,7 +4269,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_08_09" name="pixel_08_09" type="NODE">
-        <matrix sid="transform">1 0 0 0.35 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_089-mesh" name="pixel_08_09">
           <bind_material>
             <technique_common>
@@ -4279,7 +4279,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_00" name="pixel_09_00" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 -0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_090-mesh" name="pixel_09_00">
           <bind_material>
             <technique_common>
@@ -4289,7 +4289,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_01" name="pixel_09_01" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 -0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_091-mesh" name="pixel_09_01">
           <bind_material>
             <technique_common>
@@ -4299,7 +4299,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_02" name="pixel_09_02" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 -0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_092-mesh" name="pixel_09_02">
           <bind_material>
             <technique_common>
@@ -4309,7 +4309,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_03" name="pixel_09_03" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 -0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_093-mesh" name="pixel_09_03">
           <bind_material>
             <technique_common>
@@ -4319,7 +4319,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_04" name="pixel_09_04" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 -0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_094-mesh" name="pixel_09_04">
           <bind_material>
             <technique_common>
@@ -4329,7 +4329,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_05" name="pixel_09_05" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 0.05 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_095-mesh" name="pixel_09_05">
           <bind_material>
             <technique_common>
@@ -4339,7 +4339,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_06" name="pixel_09_06" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 0.15 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_096-mesh" name="pixel_09_06">
           <bind_material>
             <technique_common>
@@ -4349,7 +4349,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_07" name="pixel_09_07" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 0.25 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_097-mesh" name="pixel_09_07">
           <bind_material>
             <technique_common>
@@ -4359,7 +4359,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_08" name="pixel_09_08" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 0.35 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_098-mesh" name="pixel_09_08">
           <bind_material>
             <technique_common>
@@ -4369,7 +4369,7 @@
         </instance_geometry>
       </node>
       <node id="pixel_09_09" name="pixel_09_09" type="NODE">
-        <matrix sid="transform">1 0 0 0.45 0 1 0 0.45 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Plane_099-mesh" name="pixel_09_09">
           <bind_material>
             <technique_common>
