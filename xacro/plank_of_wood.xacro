@@ -22,7 +22,7 @@
     </inertial>
   </link>
 
-  <xacro:macro name="tag" params="number x y side *material">
+  <xacro:macro name="tag" params="number x y side">
     <xacro:apriltag_36h11 name="tag36_11_000${number}"
       id="tag36_11_000${number}"
       size="0.060" />
@@ -39,26 +39,10 @@
   </xacro:macro>
 
   <xacro:macro name="tags" params="number x y">
-    <xacro:tag number="${number * 10}" x="-${x}" y="${y}" side="front">
-      <material name="red">
-        <color rgba="0.8 0 0 1"/>
-      </material>
-    </xacro:tag>
-    <xacro:tag number="${number * 10 + 1}" x="${x}" y="${y}" side="front">
-      <material name="green">
-        <color rgba="0 0.8 0 1"/>
-      </material>
-    </xacro:tag>
-    <xacro:tag number="${number * 10 + 2}" x="${x}" y="${y}" side="back">
-      <material name="blue">
-        <color rgba="0 0 0.8 1"/>
-      </material>
-    </xacro:tag>
-    <xacro:tag number="${number * 10 + 3}" x="-${x}" y="${y}" side="back">
-      <material name="brown">
-        <color rgba="0.8 0.8 0 1"/>
-      </material>
-    </xacro:tag>
+    <xacro:tag number="${number * 10    }" x="-${x}" y="${y}" side="front"/>
+    <xacro:tag number="${number * 10 + 1}" x="${x}"  y="${y}" side="front"/>
+    <xacro:tag number="${number * 10 + 2}" x="${x}"  y="${y}" side="back" />
+    <xacro:tag number="${number * 10 + 3}" x="-${x}" y="${y}" side="back" />
   </xacro:macro>
 
   <xacro:tags number="$(arg number)" x="$(arg x)" y="$(arg y)" />
