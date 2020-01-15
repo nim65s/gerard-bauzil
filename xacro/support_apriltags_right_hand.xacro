@@ -2,7 +2,18 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="support_apriltags_right_hand">
   <xacro:include filename="apriltag.xacro"/>
 
-  <link name="base_link">
+  <xacro:property name="d" value="0.05563" />
+  <xacro:property name="x" value="-0.005" />
+  <xacro:property name="deg_to_rad" value="0.01745329251994329577"/>
+
+  <link name="base_link"/>
+  <joint name="base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="support_link"/>
+    <origin xyz="0 0 0.007" rpy="0 ${90 * deg_to_rad} 0" />
+  </joint>
+
+  <link name="support_link">
     <visual>
       <geometry>
         <mesh filename="package://gerard_bauzil/meshes/support_apriltags_v3_meters.stl"/>
@@ -27,15 +38,11 @@
       id="tag36_11_00${number}"
       size="0.020" />
     <joint name="tag36_11_00${number}_joint" type="fixed">
-      <parent link="base_link"/>
+      <parent link="support_link"/>
       <child  link="tag36_11_00${number}"/>
       <xacro:insert_block name="origin" />
     </joint>
   </xacro:macro>
-
-  <xacro:property name="d" value="0.05563" />
-  <xacro:property name="x" value="-0.005" />
-  <xacro:property name="deg_to_rad" value="0.01745329251994329577"/>
 
   <xacro:tag number="104">
     <origin xyz="${x} -${d}  ${d}" rpy="0 ${-45 * deg_to_rad} ${ 90 * deg_to_rad}" />
