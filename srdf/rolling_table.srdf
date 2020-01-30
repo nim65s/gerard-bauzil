@@ -1,11 +1,11 @@
 <robot name="table">
   <contact name="top">
-    <link name="table_link"/>
+    <link name="base_link"/>
     <point>
-      +0.25 +0.30 0.75
-      +0.25 -0.30 0.75
-      -0.25 -0.30 0.75
-      -0.25 +0.30 0.75
+      +0.25 +0.30 0.8
+      +0.25 -0.30 0.8
+      -0.25 -0.30 0.8
+      -0.25 +0.30 0.8
     </point>
     <shape>
       4 3 2 1 0
