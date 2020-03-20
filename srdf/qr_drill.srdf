@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="driller">
+  <gripper name="drill_tip" clearance="0.005">
+    <position xyz="0 0 0.046" rpy="0 -1.5707963267948966 0"/>
+    <link name="drill_link"/>
+  </gripper>
+</robot>

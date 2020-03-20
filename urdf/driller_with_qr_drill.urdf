@@ -37,7 +37,7 @@
     </visual>
     <collision>
       <geometry name="drill">
-        <cylinder length="0.05" radius="0.005"/>
+        <cylinder length="0.074" radius="0.005"/>
       </geometry>
     </collision>
     <inertial>
