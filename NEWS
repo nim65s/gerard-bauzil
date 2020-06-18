@@ -1,4 +1,21 @@
                                                                 -*- outline -*-
+
+New in 1.2.0
+* Publish license BSD-2.
+* Add AprilTags on boxes and tables.
+* Add ability to put april tags in launch files.
+* Add more April tags.
+* Fix orientation of AprilTag DAE files.
+* Fix orientation of tags on rolling table.
+* AprilTag size does not take the white border into account.
+* Add AprilTag 100-107 (Pyrene hand)
+* Add ViSP plank_of_wood.cao + model of the QR code support.
+* Clean xacro file.
+* Reorient the support in support_apriltags_right_hand.xacro
+* Put table surface relative to base_link
+* Add rolling_table.
+* Add generated SRDF.
+
 New in 1.1.0
 * Add SRDF file with a contact surface on small platform.
 * Fix staircases_koroibot.urdf: gerard-bauzil -> gerard_bauzil.
