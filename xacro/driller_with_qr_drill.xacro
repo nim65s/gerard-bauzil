@@ -25,7 +25,7 @@
     </inertial>
   </link>
 
-  <xacro:qr_drill number="_00010" size="0.04" />
+  <xacro:qr_drill number="_00230" size="0.04" />
 
   <!-- The drill penetrates in the driller of 74 - 46.5 = 27.5mm -->
   <joint name="drill_joint" type="fixed">

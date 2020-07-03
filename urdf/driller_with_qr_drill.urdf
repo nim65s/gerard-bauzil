@@ -75,17 +75,17 @@
     <!-- 74mm / 2 + 4mm -->
     <origin rpy="0 3.141592653589793 0" xyz="0 0.049 0.041"/>
   </joint>
-  <link name="tag36_11_00010">
+  <link name="tag36_11_00230">
     <visual>
       <origin xyz="0 0 0.00001"/>
       <geometry>
-        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00010.dae" scale="0.04 0.04 1."/>
+        <mesh filename="package://gerard_bauzil/meshes/apriltag_36h11/tag36_11_00230.dae" scale="0.04 0.04 1."/>
       </geometry>
     </visual>
   </link>
   <joint name="tag_joint" type="fixed">
     <parent link="tag_support_link"/>
-    <child link="tag36_11_00010"/>
+    <child link="tag36_11_00230"/>
     <origin xyz="0 0 0.0022"/>
   </joint>
   <!-- The drill penetrates in the driller of 74 - 46.5 = 27.5mm -->
