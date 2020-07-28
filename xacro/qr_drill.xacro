@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="qr_drill">
   <xacro:include filename="apriltag.xacro"/>
 
-  <xacro:macro name="qr_drill" params="number size:=0.04">
+  <xacro:macro name="qr_drill" params="number size:=0.064">
     <link name="drill_link">
       <visual>
         <geometry>
