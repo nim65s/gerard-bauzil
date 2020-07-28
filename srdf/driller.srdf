@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="driller">
+  <handle name="handle" clearance="0.05">
+    <position xyz="-0.02 0 -0.01" rpy="0 0 0"/>
+    <link name="base_link"/>
+  </handle>
+</robot>
