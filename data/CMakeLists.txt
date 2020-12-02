@@ -72,6 +72,7 @@ SET(${PROJECT_NAME}_GBDATA
   wall_laas15.blend
   wall_laas15.dae
   wall_laas15.wrl
+  wall_laas15_koroibot.dae
 )
 
 SET(${PROJECT_NAME}_FULLPATHDATA )
