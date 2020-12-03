@@ -1,5 +1,8 @@
 <?xml version="1.0" ?>
 <robot name="gerard_bauzil">
+  <gazebo >
+    <static>true</static>
+  </gazebo>
   <link name="base_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -10,20 +13,20 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://gerard_bauzil/wall_laas15.dae"/>
+        <mesh filename="package://gerard_bauzil/wall_laas15_without_floor.dae"/>
         <!-- <mesh filename="package://gerard_bauzil/wall_laas15_koroibot.dae"/> -->
       </geometry>
     </visual>
     <!--<visual>-->
-      <!--<origin rpy="0 0 0" xyz="0 0 0"/>-->
-      <!--<geometry>-->
-        <!--<mesh filename="package://gerard_bauzil/wall_laas15.dae"/>-->
-        <!--</geometry>-->
-      <!--</visual>-->
+    <!--<origin rpy="0 0 0" xyz="0 0 0"/>-->
+    <!--<geometry>-->
+    <!--<mesh filename="package://gerard_bauzil/wall_laas15.dae"/>-->
+    <!--</geometry>-->
+    <!--</visual>-->
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://gerard_bauzil/wall_laas15.dae"/>
+        <mesh filename="package://gerard_bauzil/wall_laas15_without_floor.dae"/>
         <!-- <mesh filename="package://gerard_bauzil/wall_laas15_koroibot.dae"/> -->
       </geometry>
     </collision>
@@ -35,13 +38,13 @@
      <parent link="dummy"/>
      <child link="base_link"/>
    </joint> -->
-
+  <!-- 
  <link name="world" />
 
  <joint name="world_joint" type="fixed">
     <parent link="world" />
     <child link = "base_link" />
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
- </joint>
+    <origin xyz="0.0 0.0 0.015" rpy="0.0 0.0 0.0" />
+ </joint> -->
 </robot>
 
