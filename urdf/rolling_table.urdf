@@ -1,5 +1,5 @@
 <robot name="table">
-  <link name="table_link">
+  <link name="base_link">
     <visual>
       <origin xyz="0 0 .7425"/>
       <geometry>
@@ -125,7 +125,7 @@
     </visual>
   </link>
   <joint name="tag36_11_00011_joint" type="fixed">
-    <parent link="table_link"/>
+    <parent link="base_link"/>
     <child link="tag36_11_00011"/>
     <origin xyz="-0.199 -0.256 0.75" rpy="0 0 -1.5707963267948966" />
   </joint>
@@ -139,7 +139,7 @@
     </visual>
   </link>
   <joint name="tag36_11_00010_joint" type="fixed">
-    <parent link="table_link"/>
+    <parent link="base_link"/>
     <child link="tag36_11_00010"/>
     <origin xyz="0.202 0.0075 0.75" rpy="0 0 -1.5707963267948966" />
   </joint>
