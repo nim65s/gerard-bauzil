@@ -73,7 +73,7 @@
     <parent link="drill_link"/>
     <child link="tag_support_link_top"/>
     <!-- 74mm / 2 + 4mm -->
-    <origin rpy="3.141592653589793 0 -1.57079632679" xyz="-0.06 0.00 -0.111"/>
+    <origin rpy="3.141592653589793 1.57079632679 0" xyz="0.06 0.00 -0.111"/>
     <!-- <origin xyz="0 0.049 0.041" rpy="0 3.141592653589793 0" /> -->
   </joint>
   <link name="tag36_11_00023">

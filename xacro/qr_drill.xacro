@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="qr_drill">
   <xacro:include filename="apriltag.xacro"/>
 
-  <xacro:macro name="qr_drill" params="number size:=0.064">
+  <xacro:macro name="qr_drill" params="number size:=0.040">
     <link name="drill_link">
       <visual>
         <geometry>
@@ -28,10 +28,10 @@
       </collision_checking>
     </link>
 
-    <link name="tag_support_link">
+    <link name="tag_support_link_top">
       <visual>
         <geometry>
-          <mesh filename="package://gerard_bauzil/meshes/driller/qr_drill.stl"/>
+          <mesh filename="package://gerard_bauzil/meshes/driller/qr_drill_top.stl"/>
         </geometry>
         <material name="blue">
           <color rgba="0.1 0.1 0.9 1"/>
@@ -39,7 +39,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://gerard_bauzil/meshes/driller/qr_drill.stl"/>
+          <mesh filename="package://gerard_bauzil/meshes/driller/qr_drill_top.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -50,17 +50,18 @@
 
     <joint name="tag_support_joint" type="fixed">
       <parent link="drill_link"/>
-      <child  link="tag_support_link"/>
+      <child  link="tag_support_link_top"/>
       <!-- 74mm / 2 + 4mm -->
-      <origin xyz="0 0.049 0.041" rpy="0 3.141592653589793 0" />
+      <origin xyz="-0.06 0.00 -0.111" rpy="3.141592653589793 0 -1.57079632679" />
+      <!-- <origin xyz="0 0.049 0.041" rpy="0 3.141592653589793 0" /> -->
     </joint>
 
     <xacro:apriltag_36h11 name="tag36_11${number}" id="tag36_11${number}" size="${size}" />
 
     <joint name="tag_joint" type="fixed">
-      <parent link="tag_support_link"/>
+      <parent link="tag_support_link_top"/>
       <child  link="tag36_11${number}"/>
-      <origin xyz="0 0 0.0022" />
+      <origin xyz="0 0 0.002" />
     </joint>
   </xacro:macro>
 </robot>
