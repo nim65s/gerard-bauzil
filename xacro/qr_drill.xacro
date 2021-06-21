@@ -73,7 +73,7 @@
       <parent link="drill_link"/>
       <child  link="tag_support_link_top"/>
       <!-- 74mm / 2 + 4mm -->
-      <origin xyz="-0.06 0.00 -0.111" rpy="3.141592653589793 0 -1.57079632679" />
+      <origin xyz="-0.06 0.00 -0.105" rpy="3.141592653589793 0 -1.57079632679" />
       <!-- <origin xyz="0 0.049 0.041" rpy="0 3.141592653589793 0" /> -->
     </joint>
 
@@ -81,7 +81,7 @@
       <parent link="drill_link"/>
       <child  link="tag_support_link_back"/>
       <!-- 74mm / 2 + 4mm -->
-      <origin xyz="-0.0 0.00 -0.22" rpy="3.141592653589793 0 -1.57079632679" />
+      <origin xyz="-0.0 0.00 -0.194" rpy="3.141592653589793 0 -1.57079632679" />
       <!-- <origin xyz="0 0.049 0.041" rpy="0 3.141592653589793 0" /> -->
     </joint>
 
