@@ -1,0 +1,4386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Joseph Mirabel</author>
+      <authoring_tool>Python script</authoring_tool>
+    </contributor>
+    <created>2021-07-05 15:54:51.216346</created>
+    <modified>2021-07-05 15:54:51.216367</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="white-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">1 1 1 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="black-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0 0 0 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="white-material" name="white">
+      <instance_effect url="#white-effect"/>
+    </material>
+    <material id="black-material" name="black">
+      <instance_effect url="#black-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="plane_00_00" name="plane_00_00">
+      <mesh>
+        <source id="00_00-positions">
+          <float_array id="00_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_00-normals">
+          <float_array id="00_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_00-vertices">
+          <input semantic="POSITION" source="#00_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_00_01" name="plane_00_01">
+      <mesh>
+        <source id="00_01-positions">
+          <float_array id="00_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_01-normals">
+          <float_array id="00_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_01-vertices">
+          <input semantic="POSITION" source="#00_01-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_00_02" name="plane_00_02">
+      <mesh>
+        <source id="00_02-positions">
+          <float_array id="00_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_02-normals">
+          <float_array id="00_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_02-vertices">
+          <input semantic="POSITION" source="#00_02-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_00_03" name="plane_00_03">
+      <mesh>
+        <source id="00_03-positions">
+          <float_array id="00_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_03-normals">
+          <float_array id="00_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_03-vertices">
+          <input semantic="POSITION" source="#00_03-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_00_04" name="plane_00_04">
+      <mesh>
+        <source id="00_04-positions">
+          <float_array id="00_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_04-normals">
+          <float_array id="00_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_04-vertices">
+          <input semantic="POSITION" source="#00_04-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_00_05" name="plane_00_05">
+      <mesh>
+        <source id="00_05-positions">
+          <float_array id="00_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_05-normals">
+          <float_array id="00_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_05-vertices">
+          <input semantic="POSITION" source="#00_05-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_00_06" name="plane_00_06">
+      <mesh>
+        <source id="00_06-positions">
+          <float_array id="00_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_06-normals">
+          <float_array id="00_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_06-vertices">
+          <input semantic="POSITION" source="#00_06-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_00_07" name="plane_00_07">
+      <mesh>
+        <source id="00_07-positions">
+          <float_array id="00_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_07-normals">
+          <float_array id="00_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_07-vertices">
+          <input semantic="POSITION" source="#00_07-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_00_08" name="plane_00_08">
+      <mesh>
+        <source id="00_08-positions">
+          <float_array id="00_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_08-normals">
+          <float_array id="00_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_08-vertices">
+          <input semantic="POSITION" source="#00_08-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_00_09" name="plane_00_09">
+      <mesh>
+        <source id="00_09-positions">
+          <float_array id="00_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#00_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="00_09-normals">
+          <float_array id="00_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#00_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="00_09-vertices">
+          <input semantic="POSITION" source="#00_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#00_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#00_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_00" name="plane_01_00">
+      <mesh>
+        <source id="01_00-positions">
+          <float_array id="01_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_00-normals">
+          <float_array id="01_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_00-vertices">
+          <input semantic="POSITION" source="#01_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#01_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_01" name="plane_01_01">
+      <mesh>
+        <source id="01_01-positions">
+          <float_array id="01_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_01-normals">
+          <float_array id="01_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_01-vertices">
+          <input semantic="POSITION" source="#01_01-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#01_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_02" name="plane_01_02">
+      <mesh>
+        <source id="01_02-positions">
+          <float_array id="01_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_02-normals">
+          <float_array id="01_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_02-vertices">
+          <input semantic="POSITION" source="#01_02-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#01_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_03" name="plane_01_03">
+      <mesh>
+        <source id="01_03-positions">
+          <float_array id="01_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_03-normals">
+          <float_array id="01_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_03-vertices">
+          <input semantic="POSITION" source="#01_03-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#01_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_04" name="plane_01_04">
+      <mesh>
+        <source id="01_04-positions">
+          <float_array id="01_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_04-normals">
+          <float_array id="01_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_04-vertices">
+          <input semantic="POSITION" source="#01_04-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#01_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_05" name="plane_01_05">
+      <mesh>
+        <source id="01_05-positions">
+          <float_array id="01_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_05-normals">
+          <float_array id="01_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_05-vertices">
+          <input semantic="POSITION" source="#01_05-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#01_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_06" name="plane_01_06">
+      <mesh>
+        <source id="01_06-positions">
+          <float_array id="01_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_06-normals">
+          <float_array id="01_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_06-vertices">
+          <input semantic="POSITION" source="#01_06-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#01_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_07" name="plane_01_07">
+      <mesh>
+        <source id="01_07-positions">
+          <float_array id="01_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_07-normals">
+          <float_array id="01_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_07-vertices">
+          <input semantic="POSITION" source="#01_07-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#01_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_08" name="plane_01_08">
+      <mesh>
+        <source id="01_08-positions">
+          <float_array id="01_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_08-normals">
+          <float_array id="01_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_08-vertices">
+          <input semantic="POSITION" source="#01_08-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#01_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_01_09" name="plane_01_09">
+      <mesh>
+        <source id="01_09-positions">
+          <float_array id="01_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#01_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="01_09-normals">
+          <float_array id="01_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#01_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="01_09-vertices">
+          <input semantic="POSITION" source="#01_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#01_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#01_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_00" name="plane_02_00">
+      <mesh>
+        <source id="02_00-positions">
+          <float_array id="02_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_00-normals">
+          <float_array id="02_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_00-vertices">
+          <input semantic="POSITION" source="#02_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#02_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_01" name="plane_02_01">
+      <mesh>
+        <source id="02_01-positions">
+          <float_array id="02_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_01-normals">
+          <float_array id="02_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_01-vertices">
+          <input semantic="POSITION" source="#02_01-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#02_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_02" name="plane_02_02">
+      <mesh>
+        <source id="02_02-positions">
+          <float_array id="02_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_02-normals">
+          <float_array id="02_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_02-vertices">
+          <input semantic="POSITION" source="#02_02-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#02_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_03" name="plane_02_03">
+      <mesh>
+        <source id="02_03-positions">
+          <float_array id="02_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_03-normals">
+          <float_array id="02_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_03-vertices">
+          <input semantic="POSITION" source="#02_03-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#02_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_04" name="plane_02_04">
+      <mesh>
+        <source id="02_04-positions">
+          <float_array id="02_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_04-normals">
+          <float_array id="02_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_04-vertices">
+          <input semantic="POSITION" source="#02_04-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#02_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_05" name="plane_02_05">
+      <mesh>
+        <source id="02_05-positions">
+          <float_array id="02_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_05-normals">
+          <float_array id="02_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_05-vertices">
+          <input semantic="POSITION" source="#02_05-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#02_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_06" name="plane_02_06">
+      <mesh>
+        <source id="02_06-positions">
+          <float_array id="02_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_06-normals">
+          <float_array id="02_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_06-vertices">
+          <input semantic="POSITION" source="#02_06-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#02_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_07" name="plane_02_07">
+      <mesh>
+        <source id="02_07-positions">
+          <float_array id="02_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_07-normals">
+          <float_array id="02_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_07-vertices">
+          <input semantic="POSITION" source="#02_07-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#02_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_08" name="plane_02_08">
+      <mesh>
+        <source id="02_08-positions">
+          <float_array id="02_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_08-normals">
+          <float_array id="02_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_08-vertices">
+          <input semantic="POSITION" source="#02_08-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#02_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_02_09" name="plane_02_09">
+      <mesh>
+        <source id="02_09-positions">
+          <float_array id="02_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#02_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="02_09-normals">
+          <float_array id="02_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#02_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="02_09-vertices">
+          <input semantic="POSITION" source="#02_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#02_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#02_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_00" name="plane_03_00">
+      <mesh>
+        <source id="03_00-positions">
+          <float_array id="03_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_00-normals">
+          <float_array id="03_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_00-vertices">
+          <input semantic="POSITION" source="#03_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#03_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_01" name="plane_03_01">
+      <mesh>
+        <source id="03_01-positions">
+          <float_array id="03_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_01-normals">
+          <float_array id="03_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_01-vertices">
+          <input semantic="POSITION" source="#03_01-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#03_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_02" name="plane_03_02">
+      <mesh>
+        <source id="03_02-positions">
+          <float_array id="03_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_02-normals">
+          <float_array id="03_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_02-vertices">
+          <input semantic="POSITION" source="#03_02-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#03_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_03" name="plane_03_03">
+      <mesh>
+        <source id="03_03-positions">
+          <float_array id="03_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_03-normals">
+          <float_array id="03_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_03-vertices">
+          <input semantic="POSITION" source="#03_03-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#03_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_04" name="plane_03_04">
+      <mesh>
+        <source id="03_04-positions">
+          <float_array id="03_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_04-normals">
+          <float_array id="03_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_04-vertices">
+          <input semantic="POSITION" source="#03_04-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#03_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_05" name="plane_03_05">
+      <mesh>
+        <source id="03_05-positions">
+          <float_array id="03_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_05-normals">
+          <float_array id="03_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_05-vertices">
+          <input semantic="POSITION" source="#03_05-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#03_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_06" name="plane_03_06">
+      <mesh>
+        <source id="03_06-positions">
+          <float_array id="03_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_06-normals">
+          <float_array id="03_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_06-vertices">
+          <input semantic="POSITION" source="#03_06-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#03_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_07" name="plane_03_07">
+      <mesh>
+        <source id="03_07-positions">
+          <float_array id="03_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_07-normals">
+          <float_array id="03_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_07-vertices">
+          <input semantic="POSITION" source="#03_07-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#03_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_08" name="plane_03_08">
+      <mesh>
+        <source id="03_08-positions">
+          <float_array id="03_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_08-normals">
+          <float_array id="03_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_08-vertices">
+          <input semantic="POSITION" source="#03_08-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#03_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_03_09" name="plane_03_09">
+      <mesh>
+        <source id="03_09-positions">
+          <float_array id="03_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#03_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="03_09-normals">
+          <float_array id="03_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#03_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="03_09-vertices">
+          <input semantic="POSITION" source="#03_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#03_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#03_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_00" name="plane_04_00">
+      <mesh>
+        <source id="04_00-positions">
+          <float_array id="04_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_00-normals">
+          <float_array id="04_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_00-vertices">
+          <input semantic="POSITION" source="#04_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#04_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_01" name="plane_04_01">
+      <mesh>
+        <source id="04_01-positions">
+          <float_array id="04_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_01-normals">
+          <float_array id="04_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_01-vertices">
+          <input semantic="POSITION" source="#04_01-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#04_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_02" name="plane_04_02">
+      <mesh>
+        <source id="04_02-positions">
+          <float_array id="04_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_02-normals">
+          <float_array id="04_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_02-vertices">
+          <input semantic="POSITION" source="#04_02-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#04_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_03" name="plane_04_03">
+      <mesh>
+        <source id="04_03-positions">
+          <float_array id="04_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_03-normals">
+          <float_array id="04_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_03-vertices">
+          <input semantic="POSITION" source="#04_03-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#04_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_04" name="plane_04_04">
+      <mesh>
+        <source id="04_04-positions">
+          <float_array id="04_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_04-normals">
+          <float_array id="04_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_04-vertices">
+          <input semantic="POSITION" source="#04_04-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#04_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_05" name="plane_04_05">
+      <mesh>
+        <source id="04_05-positions">
+          <float_array id="04_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_05-normals">
+          <float_array id="04_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_05-vertices">
+          <input semantic="POSITION" source="#04_05-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#04_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_06" name="plane_04_06">
+      <mesh>
+        <source id="04_06-positions">
+          <float_array id="04_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_06-normals">
+          <float_array id="04_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_06-vertices">
+          <input semantic="POSITION" source="#04_06-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#04_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_07" name="plane_04_07">
+      <mesh>
+        <source id="04_07-positions">
+          <float_array id="04_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_07-normals">
+          <float_array id="04_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_07-vertices">
+          <input semantic="POSITION" source="#04_07-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#04_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_08" name="plane_04_08">
+      <mesh>
+        <source id="04_08-positions">
+          <float_array id="04_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_08-normals">
+          <float_array id="04_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_08-vertices">
+          <input semantic="POSITION" source="#04_08-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#04_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_04_09" name="plane_04_09">
+      <mesh>
+        <source id="04_09-positions">
+          <float_array id="04_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#04_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="04_09-normals">
+          <float_array id="04_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#04_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="04_09-vertices">
+          <input semantic="POSITION" source="#04_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#04_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#04_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_00" name="plane_05_00">
+      <mesh>
+        <source id="05_00-positions">
+          <float_array id="05_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_00-normals">
+          <float_array id="05_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_00-vertices">
+          <input semantic="POSITION" source="#05_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#05_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_01" name="plane_05_01">
+      <mesh>
+        <source id="05_01-positions">
+          <float_array id="05_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_01-normals">
+          <float_array id="05_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_01-vertices">
+          <input semantic="POSITION" source="#05_01-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#05_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_02" name="plane_05_02">
+      <mesh>
+        <source id="05_02-positions">
+          <float_array id="05_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_02-normals">
+          <float_array id="05_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_02-vertices">
+          <input semantic="POSITION" source="#05_02-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#05_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_03" name="plane_05_03">
+      <mesh>
+        <source id="05_03-positions">
+          <float_array id="05_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_03-normals">
+          <float_array id="05_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_03-vertices">
+          <input semantic="POSITION" source="#05_03-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#05_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_04" name="plane_05_04">
+      <mesh>
+        <source id="05_04-positions">
+          <float_array id="05_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_04-normals">
+          <float_array id="05_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_04-vertices">
+          <input semantic="POSITION" source="#05_04-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#05_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_05" name="plane_05_05">
+      <mesh>
+        <source id="05_05-positions">
+          <float_array id="05_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_05-normals">
+          <float_array id="05_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_05-vertices">
+          <input semantic="POSITION" source="#05_05-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#05_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_06" name="plane_05_06">
+      <mesh>
+        <source id="05_06-positions">
+          <float_array id="05_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_06-normals">
+          <float_array id="05_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_06-vertices">
+          <input semantic="POSITION" source="#05_06-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#05_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_07" name="plane_05_07">
+      <mesh>
+        <source id="05_07-positions">
+          <float_array id="05_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_07-normals">
+          <float_array id="05_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_07-vertices">
+          <input semantic="POSITION" source="#05_07-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#05_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_08" name="plane_05_08">
+      <mesh>
+        <source id="05_08-positions">
+          <float_array id="05_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_08-normals">
+          <float_array id="05_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_08-vertices">
+          <input semantic="POSITION" source="#05_08-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#05_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_05_09" name="plane_05_09">
+      <mesh>
+        <source id="05_09-positions">
+          <float_array id="05_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#05_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="05_09-normals">
+          <float_array id="05_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#05_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="05_09-vertices">
+          <input semantic="POSITION" source="#05_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#05_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#05_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_00" name="plane_06_00">
+      <mesh>
+        <source id="06_00-positions">
+          <float_array id="06_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_00-normals">
+          <float_array id="06_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_00-vertices">
+          <input semantic="POSITION" source="#06_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#06_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_01" name="plane_06_01">
+      <mesh>
+        <source id="06_01-positions">
+          <float_array id="06_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_01-normals">
+          <float_array id="06_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_01-vertices">
+          <input semantic="POSITION" source="#06_01-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#06_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_02" name="plane_06_02">
+      <mesh>
+        <source id="06_02-positions">
+          <float_array id="06_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_02-normals">
+          <float_array id="06_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_02-vertices">
+          <input semantic="POSITION" source="#06_02-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#06_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_03" name="plane_06_03">
+      <mesh>
+        <source id="06_03-positions">
+          <float_array id="06_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_03-normals">
+          <float_array id="06_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_03-vertices">
+          <input semantic="POSITION" source="#06_03-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#06_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_04" name="plane_06_04">
+      <mesh>
+        <source id="06_04-positions">
+          <float_array id="06_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_04-normals">
+          <float_array id="06_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_04-vertices">
+          <input semantic="POSITION" source="#06_04-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#06_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_05" name="plane_06_05">
+      <mesh>
+        <source id="06_05-positions">
+          <float_array id="06_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_05-normals">
+          <float_array id="06_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_05-vertices">
+          <input semantic="POSITION" source="#06_05-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#06_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_06" name="plane_06_06">
+      <mesh>
+        <source id="06_06-positions">
+          <float_array id="06_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_06-normals">
+          <float_array id="06_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_06-vertices">
+          <input semantic="POSITION" source="#06_06-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#06_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_07" name="plane_06_07">
+      <mesh>
+        <source id="06_07-positions">
+          <float_array id="06_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_07-normals">
+          <float_array id="06_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_07-vertices">
+          <input semantic="POSITION" source="#06_07-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#06_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_08" name="plane_06_08">
+      <mesh>
+        <source id="06_08-positions">
+          <float_array id="06_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_08-normals">
+          <float_array id="06_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_08-vertices">
+          <input semantic="POSITION" source="#06_08-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#06_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_06_09" name="plane_06_09">
+      <mesh>
+        <source id="06_09-positions">
+          <float_array id="06_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#06_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="06_09-normals">
+          <float_array id="06_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#06_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="06_09-vertices">
+          <input semantic="POSITION" source="#06_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#06_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#06_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_00" name="plane_07_00">
+      <mesh>
+        <source id="07_00-positions">
+          <float_array id="07_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_00-normals">
+          <float_array id="07_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_00-vertices">
+          <input semantic="POSITION" source="#07_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#07_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_01" name="plane_07_01">
+      <mesh>
+        <source id="07_01-positions">
+          <float_array id="07_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_01-normals">
+          <float_array id="07_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_01-vertices">
+          <input semantic="POSITION" source="#07_01-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#07_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_02" name="plane_07_02">
+      <mesh>
+        <source id="07_02-positions">
+          <float_array id="07_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_02-normals">
+          <float_array id="07_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_02-vertices">
+          <input semantic="POSITION" source="#07_02-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#07_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_03" name="plane_07_03">
+      <mesh>
+        <source id="07_03-positions">
+          <float_array id="07_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_03-normals">
+          <float_array id="07_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_03-vertices">
+          <input semantic="POSITION" source="#07_03-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#07_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_04" name="plane_07_04">
+      <mesh>
+        <source id="07_04-positions">
+          <float_array id="07_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_04-normals">
+          <float_array id="07_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_04-vertices">
+          <input semantic="POSITION" source="#07_04-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#07_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_05" name="plane_07_05">
+      <mesh>
+        <source id="07_05-positions">
+          <float_array id="07_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_05-normals">
+          <float_array id="07_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_05-vertices">
+          <input semantic="POSITION" source="#07_05-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#07_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_06" name="plane_07_06">
+      <mesh>
+        <source id="07_06-positions">
+          <float_array id="07_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_06-normals">
+          <float_array id="07_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_06-vertices">
+          <input semantic="POSITION" source="#07_06-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#07_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_07" name="plane_07_07">
+      <mesh>
+        <source id="07_07-positions">
+          <float_array id="07_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_07-normals">
+          <float_array id="07_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_07-vertices">
+          <input semantic="POSITION" source="#07_07-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#07_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_08" name="plane_07_08">
+      <mesh>
+        <source id="07_08-positions">
+          <float_array id="07_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_08-normals">
+          <float_array id="07_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_08-vertices">
+          <input semantic="POSITION" source="#07_08-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#07_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_07_09" name="plane_07_09">
+      <mesh>
+        <source id="07_09-positions">
+          <float_array id="07_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#07_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="07_09-normals">
+          <float_array id="07_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#07_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="07_09-vertices">
+          <input semantic="POSITION" source="#07_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#07_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#07_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_00" name="plane_08_00">
+      <mesh>
+        <source id="08_00-positions">
+          <float_array id="08_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_00-normals">
+          <float_array id="08_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_00-vertices">
+          <input semantic="POSITION" source="#08_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#08_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_01" name="plane_08_01">
+      <mesh>
+        <source id="08_01-positions">
+          <float_array id="08_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_01-normals">
+          <float_array id="08_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_01-vertices">
+          <input semantic="POSITION" source="#08_01-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#08_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_02" name="plane_08_02">
+      <mesh>
+        <source id="08_02-positions">
+          <float_array id="08_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_02-normals">
+          <float_array id="08_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_02-vertices">
+          <input semantic="POSITION" source="#08_02-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#08_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_03" name="plane_08_03">
+      <mesh>
+        <source id="08_03-positions">
+          <float_array id="08_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_03-normals">
+          <float_array id="08_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_03-vertices">
+          <input semantic="POSITION" source="#08_03-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#08_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_04" name="plane_08_04">
+      <mesh>
+        <source id="08_04-positions">
+          <float_array id="08_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_04-normals">
+          <float_array id="08_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_04-vertices">
+          <input semantic="POSITION" source="#08_04-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#08_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_05" name="plane_08_05">
+      <mesh>
+        <source id="08_05-positions">
+          <float_array id="08_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_05-normals">
+          <float_array id="08_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_05-vertices">
+          <input semantic="POSITION" source="#08_05-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#08_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_06" name="plane_08_06">
+      <mesh>
+        <source id="08_06-positions">
+          <float_array id="08_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_06-normals">
+          <float_array id="08_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_06-vertices">
+          <input semantic="POSITION" source="#08_06-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#08_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_07" name="plane_08_07">
+      <mesh>
+        <source id="08_07-positions">
+          <float_array id="08_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_07-normals">
+          <float_array id="08_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_07-vertices">
+          <input semantic="POSITION" source="#08_07-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#08_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_08" name="plane_08_08">
+      <mesh>
+        <source id="08_08-positions">
+          <float_array id="08_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_08-normals">
+          <float_array id="08_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_08-vertices">
+          <input semantic="POSITION" source="#08_08-positions"/>
+        </vertices>
+        <polylist material="black-material" count="2">
+          <input semantic="VERTEX" source="#08_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_08_09" name="plane_08_09">
+      <mesh>
+        <source id="08_09-positions">
+          <float_array id="08_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#08_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="08_09-normals">
+          <float_array id="08_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#08_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="08_09-vertices">
+          <input semantic="POSITION" source="#08_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#08_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#08_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_00" name="plane_09_00">
+      <mesh>
+        <source id="09_00-positions">
+          <float_array id="09_00-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_00-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_00-normals">
+          <float_array id="09_00-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_00-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_00-vertices">
+          <input semantic="POSITION" source="#09_00-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_00-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_00-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_01" name="plane_09_01">
+      <mesh>
+        <source id="09_01-positions">
+          <float_array id="09_01-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_01-normals">
+          <float_array id="09_01-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_01-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_01-vertices">
+          <input semantic="POSITION" source="#09_01-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_01-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_02" name="plane_09_02">
+      <mesh>
+        <source id="09_02-positions">
+          <float_array id="09_02-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_02-normals">
+          <float_array id="09_02-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_02-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_02-vertices">
+          <input semantic="POSITION" source="#09_02-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_02-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_03" name="plane_09_03">
+      <mesh>
+        <source id="09_03-positions">
+          <float_array id="09_03-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_03-normals">
+          <float_array id="09_03-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_03-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_03-vertices">
+          <input semantic="POSITION" source="#09_03-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_03-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_04" name="plane_09_04">
+      <mesh>
+        <source id="09_04-positions">
+          <float_array id="09_04-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_04-normals">
+          <float_array id="09_04-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_04-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_04-vertices">
+          <input semantic="POSITION" source="#09_04-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_04-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_05" name="plane_09_05">
+      <mesh>
+        <source id="09_05-positions">
+          <float_array id="09_05-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_05-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_05-normals">
+          <float_array id="09_05-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_05-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_05-vertices">
+          <input semantic="POSITION" source="#09_05-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_05-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_06" name="plane_09_06">
+      <mesh>
+        <source id="09_06-positions">
+          <float_array id="09_06-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_06-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_06-normals">
+          <float_array id="09_06-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_06-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_06-vertices">
+          <input semantic="POSITION" source="#09_06-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_06-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_07" name="plane_09_07">
+      <mesh>
+        <source id="09_07-positions">
+          <float_array id="09_07-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_07-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_07-normals">
+          <float_array id="09_07-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_07-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_07-vertices">
+          <input semantic="POSITION" source="#09_07-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_07-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_08" name="plane_09_08">
+      <mesh>
+        <source id="09_08-positions">
+          <float_array id="09_08-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_08-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_08-normals">
+          <float_array id="09_08-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_08-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_08-vertices">
+          <input semantic="POSITION" source="#09_08-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_08-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="plane_09_09" name="plane_09_09">
+      <mesh>
+        <source id="09_09-positions">
+          <float_array id="09_09-positions-array" count="12">-0.0625 -0.0625 0 0.0625 -0.0625 0 -0.0625 0.0625 0 0.0625 0.0625 0</float_array>
+          <technique_common>
+            <accessor source="#09_09-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="09_09-normals">
+          <float_array id="09_09-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#09_09-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="09_09-vertices">
+          <input semantic="POSITION" source="#09_09-positions"/>
+        </vertices>
+        <polylist material="white-material" count="2">
+          <input semantic="VERTEX" source="#09_09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#09_09-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="pixel_00_00" name="pixel_00_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_00" name="00_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_00_01" name="pixel_00_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_01" name="00_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_00_02" name="pixel_00_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_02" name="00_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_00_03" name="pixel_00_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_03" name="00_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_00_04" name="pixel_00_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_04" name="00_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_00_05" name="pixel_00_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_05" name="00_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_00_06" name="pixel_00_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_06" name="00_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_00_07" name="pixel_00_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_07" name="00_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_00_08" name="pixel_00_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_08" name="00_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_00_09" name="pixel_00_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_00_09" name="00_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_00" name="pixel_01_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_00" name="01_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_01" name="pixel_01_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_01" name="01_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_02" name="pixel_01_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_02" name="01_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_03" name="pixel_01_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_03" name="01_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_04" name="pixel_01_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_04" name="01_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_05" name="pixel_01_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_05" name="01_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_06" name="pixel_01_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_06" name="01_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_07" name="pixel_01_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_07" name="01_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_08" name="pixel_01_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_08" name="01_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_01_09" name="pixel_01_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_01_09" name="01_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_00" name="pixel_02_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_00" name="02_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_01" name="pixel_02_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_01" name="02_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_02" name="pixel_02_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_02" name="02_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_03" name="pixel_02_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_03" name="02_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_04" name="pixel_02_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_04" name="02_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_05" name="pixel_02_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_05" name="02_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_06" name="pixel_02_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_06" name="02_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_07" name="pixel_02_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_07" name="02_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_08" name="pixel_02_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_08" name="02_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_02_09" name="pixel_02_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_02_09" name="02_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_00" name="pixel_03_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_00" name="03_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_01" name="pixel_03_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_01" name="03_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_02" name="pixel_03_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_02" name="03_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_03" name="pixel_03_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_03" name="03_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_04" name="pixel_03_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_04" name="03_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_05" name="pixel_03_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_05" name="03_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_06" name="pixel_03_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_06" name="03_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_07" name="pixel_03_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_07" name="03_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_08" name="pixel_03_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_08" name="03_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_03_09" name="pixel_03_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_03_09" name="03_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_00" name="pixel_04_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_00" name="04_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_01" name="pixel_04_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_01" name="04_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_02" name="pixel_04_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_02" name="04_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_03" name="pixel_04_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_03" name="04_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_04" name="pixel_04_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_04" name="04_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_05" name="pixel_04_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_05" name="04_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_06" name="pixel_04_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_06" name="04_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_07" name="pixel_04_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_07" name="04_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_08" name="pixel_04_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_08" name="04_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_04_09" name="pixel_04_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_04_09" name="04_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_00" name="pixel_05_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_00" name="05_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_01" name="pixel_05_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_01" name="05_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_02" name="pixel_05_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_02" name="05_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_03" name="pixel_05_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_03" name="05_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_04" name="pixel_05_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_04" name="05_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_05" name="pixel_05_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_05" name="05_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_06" name="pixel_05_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_06" name="05_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_07" name="pixel_05_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_07" name="05_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_08" name="pixel_05_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_08" name="05_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_05_09" name="pixel_05_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.0625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_05_09" name="05_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_00" name="pixel_06_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_00" name="06_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_01" name="pixel_06_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_01" name="06_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_02" name="pixel_06_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_02" name="06_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_03" name="pixel_06_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_03" name="06_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_04" name="pixel_06_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_04" name="06_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_05" name="pixel_06_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_05" name="06_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_06" name="pixel_06_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_06" name="06_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_07" name="pixel_06_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_07" name="06_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_08" name="pixel_06_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_08" name="06_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_06_09" name="pixel_06_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.1875 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_06_09" name="06_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_00" name="pixel_07_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_00" name="07_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_01" name="pixel_07_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_01" name="07_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_02" name="pixel_07_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_02" name="07_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_03" name="pixel_07_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_03" name="07_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_04" name="pixel_07_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_04" name="07_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_05" name="pixel_07_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_05" name="07_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_06" name="pixel_07_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_06" name="07_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_07" name="pixel_07_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_07" name="07_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_08" name="pixel_07_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_08" name="07_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_07_09" name="pixel_07_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_07_09" name="07_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_00" name="pixel_08_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_00" name="08_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_01" name="pixel_08_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_01" name="08_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_02" name="pixel_08_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_02" name="08_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_03" name="pixel_08_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_03" name="08_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_04" name="pixel_08_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_04" name="08_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_05" name="pixel_08_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_05" name="08_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_06" name="pixel_08_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_06" name="08_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_07" name="pixel_08_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_07" name="08_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_08" name="pixel_08_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_08" name="08_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="black-material" target="#black-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_08_09" name="pixel_08_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.4375 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_08_09" name="08_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_00" name="pixel_09_00" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5625 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_00" name="09_00">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_01" name="pixel_09_01" type="NODE">
+        <matrix sid="transform">1 0 0 -0.4375 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_01" name="09_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_02" name="pixel_09_02" type="NODE">
+        <matrix sid="transform">1 0 0 -0.3125 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_02" name="09_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_03" name="pixel_09_03" type="NODE">
+        <matrix sid="transform">1 0 0 -0.1875 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_03" name="09_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_04" name="pixel_09_04" type="NODE">
+        <matrix sid="transform">1 0 0 -0.0625 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_04" name="09_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_05" name="pixel_09_05" type="NODE">
+        <matrix sid="transform">1 0 0 0.0625 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_05" name="09_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_06" name="pixel_09_06" type="NODE">
+        <matrix sid="transform">1 0 0 0.1875 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_06" name="09_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_07" name="pixel_09_07" type="NODE">
+        <matrix sid="transform">1 0 0 0.3125 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_07" name="09_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_08" name="pixel_09_08" type="NODE">
+        <matrix sid="transform">1 0 0 0.4375 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_08" name="09_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="pixel_09_09" name="pixel_09_09" type="NODE">
+        <matrix sid="transform">1 0 0 0.5625 0 1 0 -0.5625 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#plane_09_09" name="09_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
