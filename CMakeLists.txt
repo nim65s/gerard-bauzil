@@ -3,14 +3,45 @@
 #
 #  Author: Olivier Stasse
 #
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
-INCLUDE(cmake/base.cmake)
-INCLUDE(cmake/cpack.cmake)
+# Check if the submodule cmake have been initialized
+set(JRL_CMAKE_MODULES "${CMAKE_CURRENT_LIST_DIR}/cmake")
+if(EXISTS "${JRL_CMAKE_MODULES}/base.cmake")
+  message(STATUS "JRL cmakemodules found in 'cmake/' git submodule")
+else()
+  find_package(jrl-cmakemodules QUIET CONFIG)
+  if(jrl-cmakemodules_FOUND)
+    get_property(
+      JRL_CMAKE_MODULES
+      TARGET jrl-cmakemodules::jrl-cmakemodules
+      PROPERTY INTERFACE_INCLUDE_DIRECTORIES)
+    message(STATUS "JRL cmakemodules found on system at ${JRL_CMAKE_MODULES}")
+  elseif(${CMAKE_VERSION} VERSION_LESS "3.14.0")
+    message(
+      FATAL_ERROR
+        "\nCan't find jrl-cmakemodules. Please either:\n"
+        "  - use git submodule: 'git submodule update --init'\n"
+        "  - or install https://github.com/jrl-umi3218/jrl-cmakemodules\n"
+        "  - or upgrade your CMake version to >= 3.14 to allow automatic fetching\n"
+    )
+  else()
+    message(STATUS "JRL cmakemodules not found. Let's fetch it.")
+    include(FetchContent)
+    FetchContent_Declare(
+      "jrl-cmakemodules"
+      GIT_REPOSITORY "https://github.com/jrl-umi3218/jrl-cmakemodules.git")
+    FetchContent_MakeAvailable("jrl-cmakemodules")
+    FetchContent_GetProperties("jrl-cmakemodules" SOURCE_DIR JRL_CMAKE_MODULES)
+  endif()
+endif()
+
+
+INCLUDE("${JRL_CMAKE_MODULES}/base.cmake")
 
 SET(PROJECT_NAME gerard_bauzil)
 SET(PROJECT_DESCRIPTION "Gerard Bauzil data files")
-SET(PROJECT_URL "")
+SET(PROJECT_URL "https://github.com/Gepetto/gerard-bauzil")
 
 SETUP_PROJECT()
 ADD_SUBDIRECTORY(data)
@@ -34,4 +65,3 @@ INSTALL(FILES package.xml
 )
 
 SETUP_PROJECT_FINALIZE()
-SETUP_PROJECT_CPACK()
