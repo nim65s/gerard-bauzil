@@ -1,9 +1,9 @@
 #
-#  Copyright CNRS
+# Copyright CNRS
 #
-#  Author: Olivier Stasse
+# Author: Olivier Stasse
 #
-CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+cmake_minimum_required(VERSION 3.10)
 
 # Check if the submodule cmake have been initialized
 set(JRL_CMAKE_MODULES "${CMAKE_CURRENT_LIST_DIR}/cmake")
@@ -36,32 +36,28 @@ else()
   endif()
 endif()
 
+include("${JRL_CMAKE_MODULES}/base.cmake")
 
-INCLUDE("${JRL_CMAKE_MODULES}/base.cmake")
+set(PROJECT_NAME gerard_bauzil)
+set(PROJECT_DESCRIPTION "Gerard Bauzil data files")
+set(PROJECT_URL "https://github.com/Gepetto/gerard-bauzil")
 
-SET(PROJECT_NAME gerard_bauzil)
-SET(PROJECT_DESCRIPTION "Gerard Bauzil data files")
-SET(PROJECT_URL "https://github.com/Gepetto/gerard-bauzil")
+setup_project()
+add_subdirectory(data)
 
-SETUP_PROJECT()
-ADD_SUBDIRECTORY(data)
+config_files(urdf/cobblestone.urdf)
 
-CONFIG_FILES(urdf/cobblestone.urdf)
-
-INSTALL(DIRECTORY urdf/
+install(
+  DIRECTORY urdf/
   DESTINATION share/${PROJECT_NAME}/urdf
   FILE_PERMISSIONS OWNER_READ GROUP_READ WORLD_READ OWNER_WRITE
-  PATTERN "*.urdf"
-)
-INSTALL(FILES ${CMAKE_BINARY_DIR}/urdf/cobblestone.urdf
-  DESTINATION share/${PROJECT_NAME}/urdf
-)
-INSTALL(DIRECTORY xacro srdf launch meshes maps
+  PATTERN "*.urdf")
+install(FILES ${CMAKE_BINARY_DIR}/urdf/cobblestone.urdf
+        DESTINATION share/${PROJECT_NAME}/urdf)
+install(
+  DIRECTORY xacro srdf launch meshes maps
   DESTINATION share/${PROJECT_NAME}
-  FILE_PERMISSIONS OWNER_READ GROUP_READ WORLD_READ OWNER_WRITE
-)
-INSTALL(FILES package.xml
-  DESTINATION share/${PROJECT_NAME}/
-)
+  FILE_PERMISSIONS OWNER_READ GROUP_READ WORLD_READ OWNER_WRITE)
+install(FILES package.xml DESTINATION share/${PROJECT_NAME}/)
 
-SETUP_PROJECT_FINALIZE()
+setup_project_finalize()
